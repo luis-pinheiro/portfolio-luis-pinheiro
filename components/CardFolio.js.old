@@ -1,0 +1,20 @@
+import React from 'react';
+
+const CardFolio = ({ children, vh }) => {
+  return (
+    <main
+      id="card-folio"
+      className="container relative flex w-full m-auto overflow-hidden align-middle border border-transparent rounded bg-opacity-90 shadow-drop bg-nord4 bg-clip-padding "
+    >
+      <span className="z-40 border-animated " id="1"></span>
+      <span className="z-40 border-animated " id="2"></span>
+      <span className="z-40 border-animated " id="3"></span>
+      <span className="z-40 border-animated " id="4"></span>
+      <div className="w-full p-5 overflow-y-auto" style={{ height: `${vh}` }}>
+        {children}
+      </div>
+    </main>
+  );
+};
+
+export default CardFolio;

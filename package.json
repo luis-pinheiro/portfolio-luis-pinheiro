@@ -1,0 +1,26 @@
+{
+  "name": "portfolio",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "tcv": "npx tailwind-config-viewer"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.2",
+    "@tailwindcss/forms": "^0.2.1",
+    "autoprefixer": "^10.2.1",
+    "next": "10.0.5",
+    "postcss": "^8.2.4",
+    "postcss-preset-env": "^6.7.0",
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
+    "tailwind-nord": "^1.2.0",
+    "tailwindcss": "^2.0.2",
+    "tailwindcss-debug-screens": "^2.0.0",
+    "tailwindcss-elevation": "^1.0.1",
+    "tailwindcss-typography": "^3.1.0"
+  }
+}

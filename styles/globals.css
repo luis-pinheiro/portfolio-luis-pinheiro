@@ -1,0 +1,136 @@
+body {
+  @apply debug-screens;
+}
+
+/* Toggle Button */
+.toggle__dot {
+  /* top: -0.25rem;
+  left: -0.25rem; */
+  transition: all 0.3s ease-in-out;
+}
+
+input:checked ~ .toggle__dot {
+  transform: translateX(100%);
+  /* background-color: #48bb78; */
+}
+
+/* End Toggle Button */
+
+.oswald {
+  font-family: 'Oswald', serif;
+}
+
+.tangerine {
+  font-family: 'Tangerine', serif;
+}
+
+.code {
+  font-family: 'Source Code Pro', monospace;
+}
+
+.tag {
+  font-size: 0.75rem;
+  line-height: 0.2rem;
+}
+
+.profile-img > div:nth-child(1) {
+  @apply border-8 border-nord4 border-opacity-75 rounded-full dark:border-nord0 !important;
+}
+.profile-img-about > div:nth-child(1) {
+  @apply rounded-full shadow-xl;
+}
+
+/* Card */
+#card-folio {
+  backdrop-filter: blur(7px);
+  @apply bg-opacity-75 !important;
+}
+
+#card-folio span.border-animated {
+  position: absolute;
+  display: block;
+}
+#\31 {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  /* background: linear-gradient(90deg, transparent, #0175d8); */
+  background: linear-gradient(90deg, rgba(0, 104, 249, 0) 0%, rgba(255, 255, 255, 1) 75%, rgba(0, 104, 249, 1) 100%);
+  /* background: linear-gradient(90deg, rgba(43, 53, 150, 0) 0%, rgba(1, 117, 220, 1) 75%, rgba(238, 238, 238, 1) 100%); */
+  animation: animate1 5s linear infinite;
+}
+/* add keyframes for animation*/
+@keyframes animate1 {
+  0% {
+    left: -100%;
+  }
+  50%,
+  100% {
+    left: 100%;
+  }
+}
+/* 2nd line animation*/
+#\32 {
+  top: -100%;
+  right: 0;
+  width: 3px;
+  height: 100%;
+
+  background: linear-gradient(180deg, rgba(0, 104, 249, 0) 0%, rgba(255, 255, 255, 1) 75%, rgba(0, 104, 249, 1) 100%);
+  /* background: linear-gradient(180deg, rgba(43, 53, 150, 0) 0%, rgba(1, 117, 220, 1) 75%, rgba(238, 238, 238, 1) 100%); */
+  animation: animate2 5s linear infinite;
+  animation-delay: 6.25s;
+}
+/* add keyframes*/
+@keyframes animate2 {
+  0% {
+    top: -100%;
+  }
+  50%,
+  100% {
+    top: 100%;
+  }
+}
+/* 3rd line animation*/
+
+#\33 {
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 3px;
+
+  background: linear-gradient(270deg, rgba(0, 104, 249, 0) 0%, rgba(255, 255, 255, 1) 75%, rgba(0, 104, 249, 1) 100%);
+  /* background: linear-gradient(270deg, rgba(43, 53, 150, 0) 0%, rgba(1, 117, 220, 1) 75%, rgba(238, 238, 238, 1) 100%); */
+  animation: animate3 5s linear infinite;
+}
+@keyframes animate3 {
+  0% {
+    right: -100%;
+  }
+  50%,
+  100% {
+    right: 100%;
+  }
+}
+/* 4th line animation*/
+#\34 {
+  bottom: -100%;
+  left: 0;
+  width: 3px;
+  height: 100%;
+
+  background: linear-gradient(360deg, rgba(0, 104, 249, 0) 0%, rgba(255, 255, 255, 1) 75%, rgba(0, 104, 249, 1) 100%);
+  /* background: linear-gradient(360deg, rgba(43, 53, 150, 0) 0%, rgba(1, 117, 220, 1) 75%, rgba(238, 238, 238, 1) 100%); */
+  animation: animate4 5s linear infinite;
+  animation-delay: 6.25s;
+}
+@keyframes animate4 {
+  0% {
+    bottom: -100%;
+  }
+  50%,
+  100% {
+    bottom: 100%;
+  }
+}

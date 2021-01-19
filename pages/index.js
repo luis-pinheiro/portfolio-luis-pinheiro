@@ -1,0 +1,76 @@
+import Head from 'next/head';
+import CardFolio from './../components/CardFolio2';
+import Image from 'next/image';
+import IconLink from '../components/IconLink';
+import SocialLinks from './../components/SocialLinks';
+import '@fortawesome/fontawesome-free/css/all.css';
+
+if (typeof window !== 'undefined') {
+  require('../textScrambler');
+}
+
+export default function Home() {
+  return (
+    <div className="place-self-center">
+      <Head>
+        <title>Luis Pinheiro | Portfolio</title>
+        <link rel="icon" href="./favicon_io/favicon.ico" />
+      </Head>
+
+      <div className="grid mx-auto -mb-20 place-items-center profile-img">
+        <Image
+          className="z-50 self-center block mx-auto mb-16 border-8 rounded-full border-nord4 "
+          src="/images/profile.jpg"
+          alt="Picture of the author"
+          layout="intrinsic"
+          width="150px"
+          height="150px"
+        />
+      </div>
+      <CardFolio vh="70vh" classes="place-self-center container">
+        <div className="flex flex-col w-full h-full justify-evenly">
+          <div className="grid w-full h-full mx-auto place-items-center">
+            <div className="mt-24 ">
+              <h1 className="flex text-6xl text-center text-nord3 dark:text-nord6 dark:text-shadow lg:text-9xl tangerine ">
+                Luis Pinheiro
+              </h1>
+              <div
+                id="scramble"
+                className="text-xl font-semibold text-center dark:text-nord6 dark:text-shadow text-nord3 my-7 code"
+              ></div>
+            </div>
+            <div className="flex flex-row flex-wrap content-around justify-center w-full px-5 text-2xl">
+              <IconLink to="/about2" icon="fas fa-user-circle" title={'About'}></IconLink>
+              <IconLink to="/work2" icon="fas fa-briefcase" title={'Work'} />
+              <IconLink to="/services2" icon="fab fa-whmcs" title={'Services'} />
+              <IconLink to="/contact" icon="fas fa-envelope" title={'Contact'} />
+            </div>
+            <div id="social-links " className="w-full mt-10 sm:max-w-md">
+              <ul className="flex flex-wrap justify-around place-content-center">
+                <li>
+                  <SocialLinks className="" icon="fab fa-linkedin" url="https://www.linkedin.com/in/luis-pinheiro" />
+                </li>
+                <li>
+                  <SocialLinks className="" icon="fab fa-dev" url="https://dev.to/luispinheiro" />
+                </li>
+                <li>
+                  <SocialLinks
+                    className=""
+                    icon="fab fa-free-code-camp"
+                    url="https://www.freecodecamp.org/luis-pinheiro"
+                  />
+                </li>
+
+                <li>
+                  <SocialLinks className="" icon="fab fa-github" url="https://github.com/luis-pinheiro" />
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </CardFolio>
+    </div>
+  );
+}
+
+// https://play.tailwindcss.com/WS273Am9ju

@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react';
 import CardFolio from './../components/CardFolio2';
 import CardHeader from './../components/CardHeader';
 import '@fortawesome/fontawesome-free';
-import SocialLinks from './../components/SocialLinks';
 import ContactSocialLinksGroup from './../components/ContactSocialLinksGroup';
 
 const contact = () => {

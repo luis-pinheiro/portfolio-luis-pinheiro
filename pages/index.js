@@ -4,12 +4,15 @@ import Image from 'next/image';
 import IconLink from '../components/IconLink';
 import SocialLinks from './../components/SocialLinks';
 import '@fortawesome/fontawesome-free/css/all.css';
+import AllPagesLayout from './../layouts/allPagesLayout';
 
-if (typeof window !== 'undefined') {
-  require('../textScrambler');
-}
+// if (typeof window !== 'undefined') {
+//   require('../textScrambler');
+// }
 
-export default function Home() {
+export default function Index() {
+  // let language = window.navigator.userLanguage || window.navigator.language;
+  // alert(language);
   return (
     <div className="place-self-center">
       <Head>
@@ -31,9 +34,10 @@ export default function Home() {
         <div className="flex flex-col w-full h-full justify-evenly">
           <div className="grid w-full h-full mx-auto place-items-center">
             <div className="mt-24 ">
-              <h1 className="flex text-6xl text-center text-nord3 dark:text-nord6 dark:text-shadow lg:text-9xl tangerine ">
+              <h1 className="flex text-6xl text-center transition-colors text-nord3 dark:text-nord6 dark:text-shadow lg:text-9xl tangerine ">
                 Luis Pinheiro
               </h1>
+
               <div
                 id="scramble"
                 className="text-xl font-semibold text-center dark:text-nord6 dark:text-shadow text-nord3 my-7 code"
@@ -73,4 +77,4 @@ export default function Home() {
   );
 }
 
-// https://play.tailwindcss.com/WS273Am9ju
+Index.Layout = AllPagesLayout;

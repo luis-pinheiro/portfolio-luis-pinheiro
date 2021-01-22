@@ -11,6 +11,12 @@ module.exports = {
       backgroundImage: (theme) => ({
         profitcreations: "url('/images/bg/header-3.png ')",
       }),
+      zIndex: {
+        60: 60,
+        70: 70,
+        80: 80,
+        90: 90,
+      },
     },
     textIndent: {
       // defaults to {}

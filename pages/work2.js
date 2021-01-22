@@ -2,6 +2,7 @@ import CardFolio from './../components/CardFolio2';
 import CardHeader from './../components/CardHeader';
 import '@fortawesome/fontawesome-free';
 import CardWork from './../components/CardWork2';
+import AllPagesLayout from './../layouts/allPagesLayout';
 
 const work = () => {
   return (
@@ -61,5 +62,7 @@ const work = () => {
     </CardFolio>
   );
 };
+
+work.Layout = AllPagesLayout;
 
 export default work;

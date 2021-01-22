@@ -3,6 +3,7 @@ import CardFolio from './../components/CardFolio2';
 import CardHeader from './../components/CardHeader';
 import '@fortawesome/fontawesome-free';
 import ContactSocialLinksGroup from './../components/ContactSocialLinksGroup';
+import AllPagesLayout from './../layouts/allPagesLayout';
 
 const contact = () => {
   const [success, setSuccess] = useState(false);
@@ -72,5 +73,5 @@ const contact = () => {
     </CardFolio>
   );
 };
-
+contact.Layout = AllPagesLayout;
 export default contact;

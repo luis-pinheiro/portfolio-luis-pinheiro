@@ -61,7 +61,7 @@ const SpeechNavigation = () => {
 
       <button
         onClick={SpeechRecognition.startListening}
-        className="fixed flex items-center justify-center w-10 h-10 p-4 border-2 rounded-full z-70 text-nord6 top-1/2 right-5 border-nord6"
+        className="fixed flex items-center justify-center w-10 h-10 p-4 border-2 rounded-full bg-nord3 elevation-5 z-70 text-nord4 top-14 right-5 border-nord6"
       >
         <i className="fas fa-microphone"></i>
       </button>

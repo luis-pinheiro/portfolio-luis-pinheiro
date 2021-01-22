@@ -3,6 +3,7 @@ import CardFolio from './../components/CardFolio2';
 import CardHeader from './../components/CardHeader';
 import '@fortawesome/fontawesome-free';
 import SocialLinks from './../components/SocialLinks';
+import AllPagesLayout from './../layouts/allPagesLayout';
 
 const about = ({ children }) => {
   return (
@@ -55,5 +56,7 @@ const about = ({ children }) => {
     </CardFolio>
   );
 };
+
+about.Layout = AllPagesLayout;
 
 export default about;

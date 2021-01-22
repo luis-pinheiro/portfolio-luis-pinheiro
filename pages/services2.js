@@ -1,6 +1,7 @@
 import '@fortawesome/fontawesome-free';
 import CardFolio from './../components/CardFolio2';
 import CardHeader from './../components/CardHeader';
+import AllPagesLayout from './../layouts/allPagesLayout';
 
 const services = () => {
   return (
@@ -47,5 +48,6 @@ const services = () => {
     </CardFolio>
   );
 };
+services.Layout = AllPagesLayout;
 
 export default services;

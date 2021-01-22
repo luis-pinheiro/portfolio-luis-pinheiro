@@ -33,8 +33,9 @@ input:checked ~ .toggle__dot {
   line-height: 0.2rem;
 }
 
-.profile-img > div:nth-child(1) {
-  @apply border-8 border-nord4 border-opacity-75 rounded-full dark:border-nord0 !important;
+.profile-img {
+  width: 150px;
+  height: 150px;
 }
 .profile-img-about > div:nth-child(1) {
   @apply rounded-full shadow-xl;

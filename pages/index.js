@@ -21,14 +21,19 @@ export default function Index() {
         <link rel="icon" href="./favicon_io/favicon.ico" />
       </Head>
 
-      <div className="grid mx-auto -mb-20 place-items-center profile-img">
-        <Image
+      <div className="grid mx-auto -mb-20 place-items-center">
+        {/* <Image
           className="z-50 self-center block mx-auto mb-16 border-8 rounded-full border-nord4 "
           src="/images/profile.jpg"
           alt="Picture of the author"
           layout="intrinsic"
           width="150px"
           height="150px"
+        /> */}
+        <img
+          src="/images/profile.jpg"
+          alt="Picture of the author"
+          className="z-40 border-8 border-opacity-75 rounded-full profile-img border-nord4 dark:border-nord0 "
         />
       </div>
       <CardFolio vh="70vh" classes="place-self-center container">

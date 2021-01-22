@@ -37,17 +37,6 @@ const SpeechNavigation = () => {
     }
   }
 
-  // let redirect = '';
-
-  // if (redirectUrl) {
-  //   return alert(redirectUrl);
-  // if (pages.includes(redirectUrl)) {
-  //   redirect = <Redirect to={urls[redirectUrl]} />;
-  // } else {
-  //   redirect = <p>Could not find page: {redirectUrl}</p>;
-  // }
-  // }
-
   return (
     <div className="">
       <div
@@ -55,8 +44,8 @@ const SpeechNavigation = () => {
           !listening ? 'hidden' : 'flex'
         } fixed top-0  flex-col items-center justify-center  w-screen h-screen bg-blue-700 bg-opacity-75 z-60`}
       >
-        <h4 className="text-lg font-semibold text-shadow text-nord6">Listening</h4>
-        <p className="text-4xl font-medium text-shadow text-nord6"> {transcript}</p>
+        <h4 className={`${!listening ? 'hidden' : ''} text-lg font-semibold text-shadow text-nord6`}>Listening</h4>
+        <p className={`${!listening ? 'hidden' : ''} text-4xl font-medium text-shadow text-nord6`}> {transcript}</p>
       </div>
 
       <button

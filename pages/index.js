@@ -24,7 +24,7 @@ export default function Index() {
         <img
           src="/images/profile.jpg"
           alt="Picture of the author"
-          className="z-40 border-8 border-opacity-75 rounded-full profile-img border-nord4 dark:border-nord0 "
+          className="z-50 border-8 border-opacity-75 rounded-full profile-img border-nord4 dark:border-nord0 "
         />
       </div>
       <CardFolio vh="70vh" classes="place-self-center container">

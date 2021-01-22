@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import CardFolio from './../components/CardFolio2';
 import CardHeader from './../components/CardHeader';
 import '@fortawesome/fontawesome-free';
@@ -13,14 +12,11 @@ const about = ({ children }) => {
       <div className="flex flex-col justify-around w-full h-full place-items-center">
         <div className="flex flex-col w-full mt-20 ">
           <div className=" place-items-center">
-            <div className="grid mx-auto place-items-center profile-img-about">
-              <Image
-                className="z-10 self-center block mx-auto mb-16 "
+            <div className="grid mx-auto place-items-center ">
+              <img
                 src="/images/profile.jpg"
                 alt="Picture of the author"
-                layout="intrinsic"
-                width="150px"
-                height="150px"
+                className="rounded-full shadow-xl profile-img"
               />
             </div>
 

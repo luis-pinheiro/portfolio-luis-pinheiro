@@ -1,6 +1,5 @@
 import Head from 'next/head';
 import CardFolio from './../components/CardFolio2';
-import Image from 'next/image';
 import IconLink from '../components/IconLink';
 import SocialLinks from './../components/SocialLinks';
 import '@fortawesome/fontawesome-free/css/all.css';
@@ -22,14 +21,6 @@ export default function Index() {
       </Head>
 
       <div className="grid mx-auto -mb-20 place-items-center">
-        {/* <Image
-          className="z-50 self-center block mx-auto mb-16 border-8 rounded-full border-nord4 "
-          src="/images/profile.jpg"
-          alt="Picture of the author"
-          layout="intrinsic"
-          width="150px"
-          height="150px"
-        /> */}
         <img
           src="/images/profile.jpg"
           alt="Picture of the author"

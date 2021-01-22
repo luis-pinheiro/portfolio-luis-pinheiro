@@ -37,9 +37,6 @@ input:checked ~ .toggle__dot {
   width: 150px;
   height: 150px;
 }
-.profile-img-about > div:nth-child(1) {
-  @apply rounded-full shadow-xl;
-}
 
 /* Card */
 #card-folio {

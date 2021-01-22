@@ -5,6 +5,7 @@ import IconLink from '../components/IconLink';
 import SocialLinks from './../components/SocialLinks';
 import '@fortawesome/fontawesome-free/css/all.css';
 import AllPagesLayout from './../layouts/allPagesLayout';
+import './../textScrambler';
 
 // if (typeof window !== 'undefined') {
 //   require('../textScrambler');

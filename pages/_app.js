@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
-
 import Head from 'next/head';
-import Switch from './../components/Switch';
+import Switch from './../components/Switch2';
 import 'tailwindcss/tailwind.css';
 import '../styles/globals.css';
 

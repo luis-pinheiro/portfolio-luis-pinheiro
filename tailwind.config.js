@@ -1,6 +1,11 @@
 module.exports = {
+  important: true,
   purge: ['./pages/**/*.js', './components/**/*.js'],
   darkMode: 'class', // or 'media' or 'class'
+  i18n: {
+    locales: ['en-US'],
+    defaultLocale: 'en-US',
+  },
   theme: {
     extend: {
       boxShadow: {
@@ -10,6 +15,8 @@ module.exports = {
 
       backgroundImage: (theme) => ({
         profitcreations: "url('/images/bg/header-3.png ')",
+        check: "url('/icons/check.svg')",
+        landscape: "url('/images/landscape/2.jpg')",
       }),
       zIndex: {
         60: 60,
@@ -173,6 +180,12 @@ module.exports = {
     }),
   },
   variants: {
+    extend: {
+      backgroundColor: ['checked'],
+      borderColor: ['checked'],
+      inset: ['checked'],
+      zIndex: ['hover', 'active'],
+    },
     // all the following default to ['responsive']
     textIndent: ['responsive'],
     textShadow: ['responsive', 'dark', 'hover'],
@@ -201,4 +214,7 @@ module.exports = {
     }),
     require('tailwind-nord'),
   ],
+  future: {
+    purgeLayersByDefault: true,
+  },
 };

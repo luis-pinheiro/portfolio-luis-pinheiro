@@ -1,22 +1,25 @@
 import React from 'react';
 
-const Switch = ({ isToggled, onToggle }) => {
+const Switch2 = ({ isToggled, onToggle }) => {
   return (
-    <div className="absolute z-30 flex border w-11 h-7 top-3 lg:top-5 right-5">
+    <div className="fixed z-30 flex rounded-full w-11 h-7 top-3 lg:top-5 right-5">
       {/* Toggle Button */}
-      <label for="toogleA" className="flex items-center cursor-pointer">
+      <label htmlFor="toogleA" className="flex items-center justify-center rounded-full cursor-pointer">
         {/* toggle  */}
-        <div className="relative">
+        <div className="relative rounded-full ">
           {/* input */}
           <input id="toogleA" type="checkbox" className="hidden" checked={isToggled} onChange={onToggle} />
           {/* line */}
-          <div className="w-10 h-4 bg-gray-400 rounded-full shadow-inner toggle__line"></div>
+          <div className="h-8 bg-white rounded-full w-14 toggle__line">
+            <i className="absolute text-yellow-500 fas fa-sun left-2 top-2"></i>
+            <i className="absolute fas fa-moon right-2 top-2"></i>
+          </div>
           {/* dot */}
-          <div className="absolute inset-y-0 left-0 w-6 h-6 bg-white rounded-full shadow toggle__dot"></div>
+          <div className="absolute w-6 h-6 bg-blue-600 rounded-full shadow hover:elevation-7 inset-y-1 left-1 toggle__dot"></div>
         </div>
       </label>
     </div>
   );
 };
 
-export default Switch;
+export default Switch2;

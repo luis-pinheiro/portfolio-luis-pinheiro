@@ -1,11 +1,12 @@
 import '@fortawesome/fontawesome-free';
-import CardFolio from './../components/CardFolio2';
-import CardHeader from './../components/CardHeader';
-import AllPagesLayout from './../layouts/allPagesLayout';
+import CardFolio from '../components/CardFolio';
+import CardHeader from '../components/CardHeader';
+import AllPagesLayout from '../layouts/allPagesLayout';
 
 const services = () => {
   return (
-    <CardFolio classes="w-screen h-screen">
+    // <CardFolio classes="w-screen h-screen">
+    <CardFolio classes="">
       <CardHeader icon="fab fa-whmcs" title="services" />
       <div className="container flex flex-row flex-wrap content-around flex-1 h-full pt-20 mx-auto ">
         <div className="lg:w-2/4 p-7">

@@ -1,15 +1,18 @@
-import CardFolio from './../components/CardFolio2';
-import CardHeader from './../components/CardHeader';
+import CardFolio from '../components/CardFolio';
+import CardHeader from '../components/CardHeader';
 import '@fortawesome/fontawesome-free';
-import CardWork from './../components/CardWork2';
-import AllPagesLayout from './../layouts/allPagesLayout';
+import CardWork from '../components/CardWork';
+import AllPagesLayout from '../layouts/allPagesLayout';
 
 const work = () => {
   return (
-    <CardFolio classes="w-screen h-screen">
-      <CardHeader icon="fas fa-briefcase" title="Work" />
+    // <CardFolio classes="w-screen h-screen">
+    <CardFolio classes="">
+      <div>
+        <CardHeader icon="fas fa-briefcase" title="Work" />
+      </div>
 
-      <div className="container grid w-full h-full px-5 mx-auto mb-5 gap-7 pt-14 lg:pt-20 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 auto-rows-auto">
+      <div className="container grid w-full h-full px-5 mx-auto mb-5 gap-7 mt-14 lg:pt-20 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 auto-rows-auto">
         <CardWork
           img="/images/portfolio/profitcreations.png"
           title="My Old Portfolio"

@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import CardFolio from './../components/CardFolio2';
+import CardFolio from './../components/CardFolio';
 import IconLink from '../components/IconLink';
 import SocialLinks from './../components/SocialLinks';
 import '@fortawesome/fontawesome-free/css/all.css';
@@ -27,7 +27,8 @@ export default function Index() {
           className="z-50 border-8 border-opacity-75 rounded-full profile-img border-nord4 dark:border-nord0 "
         />
       </div>
-      <CardFolio vh="70vh" classes="place-self-center container">
+      {/* <CardFolio vh="70vh" classes="place-self-center container"> */}
+      <CardFolio classes="">
         <div className="flex flex-col w-full h-full justify-evenly">
           <div className="grid w-full h-full mx-auto place-items-center">
             <div className="mt-24 ">
@@ -41,9 +42,9 @@ export default function Index() {
               ></div>
             </div>
             <div className="flex flex-row flex-wrap content-around justify-center w-full px-5 text-2xl">
-              <IconLink to="/about2" icon="fas fa-user-circle" title={'About'}></IconLink>
-              <IconLink to="/work2" icon="fas fa-briefcase" title={'Work'} />
-              <IconLink to="/services2" icon="fab fa-whmcs" title={'Services'} />
+              <IconLink to="/about" icon="fas fa-user-circle" title={'About'}></IconLink>
+              <IconLink to="/work" icon="fas fa-briefcase" title={'Work'} />
+              <IconLink to="/services" icon="fab fa-whmcs" title={'Services'} />
               <IconLink to="/contact" icon="fas fa-envelope" title={'Contact'} />
             </div>
             <div id="social-links " className="w-full mt-10 sm:max-w-md">

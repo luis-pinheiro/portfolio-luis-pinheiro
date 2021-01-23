@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import CardFolio from './../components/CardFolio2';
+import CardFolio from './../components/CardFolio';
 import CardHeader from './../components/CardHeader';
 import '@fortawesome/fontawesome-free';
 import ContactSocialLinksGroup from './../components/ContactSocialLinksGroup';
@@ -14,7 +14,8 @@ const contact = () => {
     }
   }, []);
   return (
-    <CardFolio classes="w-screen h-screen">
+    // <CardFolio classes="w-screen h-screen">
+    <CardFolio classes="">
       <CardHeader icon="fas fa-envelope" title="Contact" />
       <div className="flex flex-col items-center flex-auto h-full sm:flex-row ">
         <div

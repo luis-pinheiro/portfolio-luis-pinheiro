@@ -22,9 +22,9 @@ export default function Index() {
 
       <div className="grid mx-auto -mb-20 place-items-center">
         <img
-          src="/images/profile.jpg"
+          src="/images/profile1.png"
           alt="Picture of the author"
-          className="z-50 border-8 border-opacity-75 rounded-full profile-img border-nord4 dark:border-nord0 "
+          className="z-50 border-8 rounded-full border-opacity-90 profile-img border-nord4 dark:border-nord0 "
         />
       </div>
       {/* <CardFolio vh="70vh" classes="place-self-center container"> */}

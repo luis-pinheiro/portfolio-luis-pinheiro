@@ -38,13 +38,14 @@ input:checked ~ .toggle__dot {
 /* Card */
 #card-folio {
   backdrop-filter: blur(7px);
-  @apply bg-opacity-90 !important;
+  @apply bg-opacity-95 !important;
 }
 
 #card-folio span.border-animated {
   position: absolute;
   display: block;
 }
+
 #\31 {
   top: 0;
   left: 0;

@@ -14,7 +14,7 @@ module.exports = {
       },
 
       backgroundImage: (theme) => ({
-        profitcreations: "url('/images/bg/header-3.png ')",
+        profitcreations: "url('/images/bg/header-2_4x.jpg ')",
         free1: "url('/images/bg/freeimg_580291freejpg850_4x.jpg')",
         check: "url('/icons/check.svg')",
         landscape: "url('/images/landscape/2.jpg')",
@@ -186,6 +186,7 @@ module.exports = {
       borderColor: ['checked'],
       inset: ['checked'],
       zIndex: ['hover', 'active'],
+      backgroundImage: ['dark'],
     },
     // all the following default to ['responsive']
     textIndent: ['responsive'],

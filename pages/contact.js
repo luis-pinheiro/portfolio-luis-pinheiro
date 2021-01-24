@@ -19,10 +19,10 @@ const contact = () => {
       <CardHeader icon="fas fa-envelope" title="Contact" />
       <div className="flex flex-col items-center flex-auto h-full sm:flex-row ">
         <div
-          className="hidden w-1/6 h-full bg-nord7 dark:bg-nord2 elevation-2 border-nord2 sm:block "
+          className="hidden w-1/6 h-full rounded bg-nord7 dark:bg-nord2 elevation-2 border-nord2 sm:block "
           style={{ minWidth: '200px' }}
         >
-          <ContactSocialLinksGroup cls="flex flex-col justify-center h-full" />
+          <ContactSocialLinksGroup cls="flex flex-col justify-center h-full rounded" />
         </div>
 
         <div className="flex w-full h-full p-10 mx-auto rounded lg:h-auto lg:w-2/4 dark:bg-nord2 border-nord2 elevation-2 bg-nord9 place-items-center">

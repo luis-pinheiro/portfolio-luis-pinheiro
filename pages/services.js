@@ -8,7 +8,7 @@ const services = () => {
     // <CardFolio classes="w-screen h-screen">
     <CardFolio classes="">
       <CardHeader icon="fab fa-whmcs" title="services" />
-      <div className="container flex flex-row flex-wrap content-around flex-1 h-full pt-20 mx-auto ">
+      <div className="container flex flex-row flex-wrap content-around flex-1 h-full mx-auto ">
         <div className="lg:w-2/4 p-7">
           <h4 className="text-2xl text-nord3 dark:text-nord6 dark:text-shadow ">
             <i className="mr-2 fas fa-layer-group"></i>Graphic Design

@@ -2,7 +2,7 @@ import React from 'react';
 
 const Switch = ({ isToggled, onToggle }) => {
   return (
-    <div className="fixed flex rounded-full z-60 w-11 h-7 top-28 right-5">
+    <div className="fixed flex rounded-full z-60 w-11 h-7 top-28 right-4">
       {/* Toggle Button */}
       <label htmlFor="toogleA" className="flex items-center justify-center rounded-full cursor-pointer">
         {/* toggle  */}

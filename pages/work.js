@@ -12,7 +12,7 @@ const work = () => {
         <CardHeader icon="fas fa-briefcase" title="Work" />
       </div>
 
-      <div className="container grid w-full h-full px-5 mx-auto mb-5 gap-7 mt-14 lg:pt-20 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 auto-rows-auto">
+      <div className="container grid w-full h-full px-5 mx-auto mb-5 gap-7 lg:pt-20 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 auto-rows-auto">
         <CardWork
           img="/images/portfolio/profitcreations.png"
           title="My Old Portfolio"

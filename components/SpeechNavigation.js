@@ -32,8 +32,6 @@ const SpeechNavigation = () => {
   function redirectToPage(redirectPage) {
     if (pages.includes(redirectPage)) {
       return Router.push(urls[redirectPage]);
-    } else if (!pages.includes(redirectPage)) {
-      return aler('Could not find page: ' + { redirectPage } + '.');
     } else {
       return alert('"' + { transcript } + '"' + 'is not a valide voice command.');
     }

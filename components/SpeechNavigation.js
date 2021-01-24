@@ -17,9 +17,9 @@ const SpeechNavigation = () => {
   const pages = ['home', 'about', 'work', 'services', 'contact'];
   const urls = {
     home: '/',
-    about: '/about2',
-    work: '/work2',
-    services: '/services2',
+    about: '/about',
+    work: '/work',
+    services: '/services',
     contact: '/contact',
   };
 
@@ -32,25 +32,47 @@ const SpeechNavigation = () => {
   function redirectToPage(redirectPage) {
     if (pages.includes(redirectPage)) {
       return Router.push(urls[redirectPage]);
+    } else if (!pages.includes(redirectPage)) {
+      return aler('Could not find page: ' + { redirectPage } + '.');
     } else {
-      return alert('Could not find page: ' + redirectPage);
+      return alert('"' + { transcript } + '"' + 'is not a valide voice command.');
     }
   }
 
   return (
-    <div className="">
-      <div
-        className={`${
-          !listening ? 'hidden' : 'flex'
-        } fixed top-0  flex-col items-center justify-center  w-screen h-screen bg-blue-700 bg-opacity-75 z-60`}
-      >
-        <h4 className={`${!listening ? 'hidden' : ''} text-lg font-semibold text-shadow text-nord6`}>Listening</h4>
-        <p className={`${!listening ? 'hidden' : ''} text-4xl font-medium text-shadow text-nord6`}> {transcript}</p>
-      </div>
+    // <div className="">
+    //   <div
+    //     className={`${
+    //       !listening ? 'hidden' : 'flex'
+    //     } fixed top-0  flex-col items-center justify-center  w-screen h-screen bg-blue-700 bg-opacity-75 z-60`}
+    //   >
+    <div id="speech" className="">
+      {listening && (
+        <div className="fixed top-0 flex flex-col items-center justify-around w-screen h-screen bg-opacity-90 dark:bg-nord3 bg-nord4 z-60">
+          {/* <h4 className={`${!listening ? 'hidden' : ''} text-lg font-semibold text-shadow text-nord6`}>Listening</h4> */}
+          <h4 className="font-semibold text-7xl tangerine text-nord3 dark:text-nord4 dark:text-shadow ">
+            Listening...
+          </h4>
+          <p
+            className={`${!listening ? 'hidden' : ''} text-4xl font-medium dark:text-shadow text-nord3 dark:text-nord6`}
+          >
+            {' '}
+            {transcript}
+          </p>
+          <div className="items-center justify-center p-5 rounded bg-nord7 elevation-2">
+            <h5 className="text-2xl text-center text-nord2">How it works?</h5>
+            <p className="text-center text-nord2">Just say:</p>
+            <p className="text-center text-nord2">Go to [page] or Open [page]</p>
+            <p className="text-center text-nord2">Example: Go to work</p>
+          </div>
+        </div>
+      )}
 
       <button
         onClick={SpeechRecognition.startListening}
-        className="fixed flex items-center justify-center w-10 h-10 p-4 border-2 rounded-full bg-nord3 elevation-5 z-70 text-nord4 top-14 right-5 border-nord6"
+        className={`fixed flex items-center justify-center w-10 h-10 p-4 border-2 rounded-full ${
+          !listening ? 'bg-nord3 dark:bg-nord4' : 'bg-nord11'
+        }   elevation-5 z-70  top-14 right-5 dark:text-nord3 border-nord4  text-nord4 dark:border-nord3`}
       >
         <i className="fas fa-microphone"></i>
       </button>

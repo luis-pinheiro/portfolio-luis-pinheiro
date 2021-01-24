@@ -36,9 +36,10 @@ input:checked ~ .toggle__dot {
 }
 
 /* Card */
+#speech > div,
 #card-folio {
   backdrop-filter: blur(7px);
-  @apply bg-opacity-95 !important;
+  @apply bg-opacity-75 !important;
 }
 
 #card-folio span.border-animated {

@@ -41,6 +41,9 @@ export default function Index() {
                 className="text-xl font-semibold text-center dark:text-nord6 dark:text-shadow text-nord3 my-7 code"
               ></div>
             </div>
+            <div className="p-5 border border-red-500">
+              <p className="text-center text-red-500 ">Under construction</p>
+            </div>
             <div className="flex flex-row flex-wrap content-around justify-center w-full px-5 text-2xl">
               <IconLink to="/about" icon="fas fa-user-circle" title={'About'}></IconLink>
               <IconLink to="/work" icon="fas fa-briefcase" title={'Work'} />

@@ -32,18 +32,13 @@ const SpeechNavigation = () => {
   function redirectToPage(redirectPage) {
     if (pages.includes(redirectPage)) {
       return Router.push(urls[redirectPage]);
-    } else {
-      return alert('"' + { transcript } + '"' + 'is not a valide voice command.');
+    } else if (redirectPage) {
+      return alert(`Could not find page ${redirectPage}`);
     }
+    return alert(`${transcript} is not a valide command`);
   }
 
   return (
-    // <div className="">
-    //   <div
-    //     className={`${
-    //       !listening ? 'hidden' : 'flex'
-    //     } fixed top-0  flex-col items-center justify-center  w-screen h-screen bg-blue-700 bg-opacity-75 z-60`}
-    //   >
     <div id="speech" className="">
       {listening && (
         <div className="fixed top-0 flex flex-col items-center justify-around w-screen h-screen bg-opacity-90 dark:bg-nord3 bg-nord4 z-60">

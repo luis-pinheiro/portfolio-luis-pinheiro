@@ -12,7 +12,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <div
       className={`relative flex flex-col justify-center min-h-screen align-middle bg-center bg-no-repeat bg-cover
-       ${isToggled ? 'dark' : ''} bg-profitcreations effect7`}
+       ${isToggled ? 'dark' : ''} bg-free1 effect7`}
     >
       <Switch isToggled={isToggled} onToggle={() => setIsToggled(!isToggled)} />
 

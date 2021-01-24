@@ -38,7 +38,7 @@ input:checked ~ .toggle__dot {
 /* Card */
 #card-folio {
   backdrop-filter: blur(7px);
-  @apply bg-opacity-75 !important;
+  @apply bg-opacity-90 !important;
 }
 
 #card-folio span.border-animated {

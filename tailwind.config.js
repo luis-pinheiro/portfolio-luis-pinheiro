@@ -15,6 +15,7 @@ module.exports = {
 
       backgroundImage: (theme) => ({
         profitcreations: "url('/images/bg/header-3.png ')",
+        free1: "url('/images/bg/freeimg_580291freejpg850_4x.jpg')",
         check: "url('/icons/check.svg')",
         landscape: "url('/images/landscape/2.jpg')",
       }),

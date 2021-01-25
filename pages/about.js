@@ -3,11 +3,16 @@ import CardHeader from '../components/CardHeader';
 import '@fortawesome/fontawesome-free';
 import SocialLinks from '../components/SocialLinks';
 import AllPagesLayout from '../layouts/allPagesLayout';
+import Head from 'next/head';
 
 const about = ({ children }) => {
   return (
     // <CardFolio classes="w-screen h-screen">
     <div>
+      <Head>
+        <title>Luis Pinheiro | Portfolio</title>
+        <link rel="icon" href="./favicon_io/favicon.ico" />
+      </Head>
       <CardHeader icon="fas fa-user-circle" title="About" />
       <CardFolio classes="">
         <div className="flex flex-col justify-around w-full h-full place-items-center">

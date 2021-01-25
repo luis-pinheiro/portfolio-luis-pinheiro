@@ -17,7 +17,7 @@ const CardHeader = ({ icon, title }) => {
 
             <button
               type="button"
-              class="py-2 px-4 flex justify-center items-center  dark:bg-nord4 dark:hover:bg-nord3 text-nord1 bg-nord8 dark:hover:text-shadow elevation-1 dark:hover:text-nord6 hover:bg-nord7 hover:elevation-2 focus:ring-green-500 focus:ring-offset-green-200  w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-full"
+              className="flex items-center justify-center w-full px-4 py-2 text-base font-semibold text-center transition duration-200 ease-in rounded-full shadow-md dark:bg-nord4 dark:hover:bg-nord3 text-nord1 bg-nord8 dark:hover:text-shadow elevation-1 dark:hover:text-nord6 hover:bg-nord7 hover:elevation-2 focus:ring-green-500 focus:ring-offset-green-200 focus:outline-none focus:ring-2 focus:ring-offset-2"
             >
               <i className="mr-2 text-lg fas fa-arrow-left"></i> Go Back
             </button>

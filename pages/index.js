@@ -71,8 +71,16 @@ const Index = () => {
                   <SocialLinks className="" icon="fab fa-github" url="https://github.com/luis-pinheiro" />
                 </li>
               </ul>
-              <div className="fixed bottom-0 block">
-                <ReactAudioPlayer src="/audio/ignition.mp3" autoPlay controls className="rounded" />
+              <div className="block">
+                <ReactAudioPlayer
+                  src="/audio/ignition.mp3"
+                  autoPlay
+                  controls
+                  className="fixed bottom-0 rounded "
+                  onPlay={() => {
+                    console.log('playing');
+                  }}
+                />
               </div>
             </div>
           </div>

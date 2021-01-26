@@ -4,13 +4,14 @@ import IconLink from '../components/IconLink';
 import SocialLinks from './../components/SocialLinks';
 import '@fortawesome/fontawesome-free/css/all.css';
 import AllPagesLayout from './../layouts/allPagesLayout';
+import { withTranslation } from '../i18n';
 // import './../textScrambler';
 
 // if (typeof window !== 'undefined') {
 //   require('../textScrambler');
 // }
 
-export default function Index() {
+const Index = ({ t }) => {
   // let language = window.navigator.userLanguage || window.navigator.language;
   // alert(language);
   return (
@@ -33,7 +34,7 @@ export default function Index() {
           <div className="grid w-full h-full mx-auto place-items-center">
             <div className="mt-24 ">
               <h1 className="flex text-6xl text-center transition-colors text-nord3 dark:text-nord6 dark:text-shadow lg:text-9xl tangerine ">
-                Luis Pinheiro
+                {t('author-name')}
               </h1>
 
               <div
@@ -76,6 +77,7 @@ export default function Index() {
       </CardFolio>
     </div>
   );
-}
+};
 
 Index.Layout = AllPagesLayout;
+export default withTranslation('index')(Index);

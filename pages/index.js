@@ -71,8 +71,8 @@ const Index = () => {
                   <SocialLinks className="" icon="fab fa-github" url="https://github.com/luis-pinheiro" />
                 </li>
               </ul>
-              <div className="flex justify-center align-middle">
-                <ReactAudioPlayer src="/audio/ignition.mp3" autoPlay className="rounded" />
+              <div className="fixed bottom-0 block">
+                <ReactAudioPlayer src="/audio/ignition.mp3" autoPlay controls className="rounded" />
               </div>
             </div>
           </div>

@@ -4,14 +4,14 @@ import IconLink from '../components/IconLink';
 import SocialLinks from './../components/SocialLinks';
 import '@fortawesome/fontawesome-free/css/all.css';
 import AllPagesLayout from './../layouts/allPagesLayout';
-import { withTranslation } from '../i18n';
+import ReactAudioPlayer from 'react-audio-player';
 // import './../textScrambler';
 
 // if (typeof window !== 'undefined') {
 //   require('../textScrambler');
 // }
 
-const Index = ({ t }) => {
+const Index = () => {
   // let language = window.navigator.userLanguage || window.navigator.language;
   // alert(language);
   return (
@@ -34,7 +34,7 @@ const Index = ({ t }) => {
           <div className="grid w-full h-full mx-auto place-items-center">
             <div className="mt-24 ">
               <h1 className="flex text-6xl text-center transition-colors text-nord3 dark:text-nord6 dark:text-shadow lg:text-9xl tangerine ">
-                {t('author-name')}
+                Luis Pinheiro
               </h1>
 
               <div
@@ -71,6 +71,9 @@ const Index = ({ t }) => {
                   <SocialLinks className="" icon="fab fa-github" url="https://github.com/luis-pinheiro" />
                 </li>
               </ul>
+              <div className="flex justify-center align-middle">
+                <ReactAudioPlayer src="/audio/ignition.mp3" autoPlay className="rounded" />
+              </div>
             </div>
           </div>
         </div>
@@ -80,4 +83,4 @@ const Index = ({ t }) => {
 };
 
 Index.Layout = AllPagesLayout;
-export default withTranslation('index')(Index);
+export default Index;

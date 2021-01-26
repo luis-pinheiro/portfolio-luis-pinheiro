@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import Head from 'next/head';
 import App from 'next/app';
-import { appWithTranslation } from '../i18n';
 import Switch from './../components/Switch2';
 import 'tailwindcss/tailwind.css';
 import '../styles/globals.css';
@@ -35,8 +34,5 @@ function MyApp({ Component, pageProps }) {
 }
 
 const EmptyLayout = ({ children }) => <>{children}</>;
-MyApp.getInitialProps = async (appContext) => {
-  const appProps = await App.getInitialProps(appContext);
-  return { ...appProps };
-};
-export default appWithTranslation(MyApp);
+
+export default MyApp;

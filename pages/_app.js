@@ -1,12 +1,20 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import Head from 'next/head';
 import App from 'next/app';
 import Switch from './../components/Switch2';
 import 'tailwindcss/tailwind.css';
 import '../styles/globals.css';
+import ReactAudioPlayer from 'react-audio-player';
+
+export const PlayContext = React.createContext();
 
 function MyApp({ Component, pageProps }) {
   const [isToggled, setIsToggled] = useState(false);
+  const [isPlaying, setIsPLaying] = useState(false);
+
+  function toggleIsPlaying() {
+    setIsPLaying((isPlaying) => !isPlaying);
+  }
 
   const Layout = Component.Layout || EmptyLayout;
 
@@ -23,12 +31,24 @@ function MyApp({ Component, pageProps }) {
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine" />
 
         <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
       </Head>
       <Layout>
         <div>
-          <Component {...pageProps} />
+          <PlayContext.Provider value={isPlaying}>
+            <Component {...pageProps} />
+          </PlayContext.Provider>
         </div>
       </Layout>
+      <div className="flex justify-center align-middle">
+        <ReactAudioPlayer
+          src="/audio/ignition.mp3"
+          controls
+          className="fixed bottom-0 rounded "
+          onPlay={toggleIsPlaying}
+          onPause={toggleIsPlaying}
+        />
+      </div>
     </div>
   );
 }

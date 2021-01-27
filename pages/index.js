@@ -1,10 +1,12 @@
+import React, { useContext } from 'react';
 import Head from 'next/head';
+import { PlayContext } from './_app';
 import CardFolio from './../components/CardFolio';
 import IconLink from '../components/IconLink';
 import SocialLinks from './../components/SocialLinks';
 import '@fortawesome/fontawesome-free/css/all.css';
 import AllPagesLayout from './../layouts/allPagesLayout';
-import ReactAudioPlayer from 'react-audio-player';
+
 // import './../textScrambler';
 
 // if (typeof window !== 'undefined') {
@@ -12,6 +14,7 @@ import ReactAudioPlayer from 'react-audio-player';
 // }
 
 const Index = () => {
+  const isPlaying = useContext(PlayContext);
   // let language = window.navigator.userLanguage || window.navigator.language;
   // alert(language);
   return (
@@ -25,7 +28,9 @@ const Index = () => {
         <img
           src="/images/profile1.png"
           alt="Picture of the author"
-          className="z-50 border-8 rounded-full border-opacity-90 profile-img border-nord4 dark:border-nord0 "
+          className={`${
+            isPlaying ? 'animate__animated animate__flash animate__infinite ' : ''
+          } z-50 border-8 rounded-full border-opacity-90 profile-img border-nord4 dark:border-nord0 `}
         />
       </div>
       {/* <CardFolio vh="70vh" classes="place-self-center container"> */}
@@ -33,7 +38,11 @@ const Index = () => {
         <div className="flex flex-col w-full h-full justify-evenly">
           <div className="grid w-full h-full mx-auto place-items-center">
             <div className="mt-24 ">
-              <h1 className="flex text-6xl text-center transition-colors text-nord3 dark:text-nord6 dark:text-shadow lg:text-9xl tangerine ">
+              <h1
+                className={`flex text-6xl text-center transition-colors ${
+                  isPlaying ? 'animate__animated animate__flash animate__infinite ' : ''
+                } text-nord3 dark:text-nord6 dark:text-shadow lg:text-9xl tangerine `}
+              >
                 Luis Pinheiro
               </h1>
 
@@ -71,17 +80,6 @@ const Index = () => {
                   <SocialLinks className="" icon="fab fa-github" url="https://github.com/luis-pinheiro" />
                 </li>
               </ul>
-              <div className="block">
-                <ReactAudioPlayer
-                  src="/audio/ignition.mp3"
-                  autoPlay
-                  controls
-                  className="fixed bottom-0 rounded "
-                  onPlay={() => {
-                    console.log('playing');
-                  }}
-                />
-              </div>
             </div>
           </div>
         </div>

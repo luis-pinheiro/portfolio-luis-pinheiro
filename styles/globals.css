@@ -1,5 +1,14 @@
+
+
+@import 'animate.css/animate.css';
+
 body {
   @apply debug-screens;
+}
+
+/* Animate.css */
+.heart-beat {
+  @apply animate__animated animate__heartBeat animate__infinite !important;
 }
 
 /* Toggle Button */

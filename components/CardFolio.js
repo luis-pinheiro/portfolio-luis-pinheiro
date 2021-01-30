@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { useContext } from 'react';
 
-const CardFolio2 = ({ children, classes, vh }) => {
+const CardFolio = ({ children, classes, vh }) => {
   return (
     <main
       id="card-folio"
@@ -17,4 +17,4 @@ const CardFolio2 = ({ children, classes, vh }) => {
   );
 };
 
-export default CardFolio2;
+export default CardFolio;

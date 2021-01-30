@@ -1,10 +1,10 @@
 import React, { useState, useContext } from 'react';
 import Head from 'next/head';
-import App from 'next/app';
 import Switch from './../components/Switch2';
 import 'tailwindcss/tailwind.css';
 import '../styles/globals.css';
 import ReactAudioPlayer from 'react-audio-player';
+// import 'animate.css/animate.css';
 
 export const PlayContext = React.createContext();
 
@@ -31,7 +31,7 @@ function MyApp({ Component, pageProps }) {
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine" />
 
         <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&display=swap" rel="stylesheet" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+        {/* <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" /> */}
       </Head>
       <Layout>
         <div>

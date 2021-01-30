@@ -13,10 +13,9 @@ import AllPagesLayout from './../layouts/allPagesLayout';
 //   require('../textScrambler');
 // }
 
-const Index = () => {
+const index = () => {
   const isPlaying = useContext(PlayContext);
-  // let language = window.navigator.userLanguage || window.navigator.language;
-  // alert(language);
+
   return (
     <div className="place-self-center">
       <Head>
@@ -29,7 +28,7 @@ const Index = () => {
           src="/images/profile1.png"
           alt="Picture of the author"
           className={`${
-            isPlaying ? 'animate__animated animate__flash animate__infinite ' : ''
+            isPlaying ? 'animate__animated animate__headShake animate__infinite ' : ''
           } z-50 border-8 rounded-full border-opacity-90 profile-img border-nord4 dark:border-nord0 `}
         />
       </div>
@@ -40,7 +39,7 @@ const Index = () => {
             <div className="mt-24 ">
               <h1
                 className={`flex text-6xl text-center transition-colors ${
-                  isPlaying ? 'animate__animated animate__flash animate__infinite ' : ''
+                  isPlaying ? 'animate__animated animate__rubberBand animate__infinite animate__delay-2s ' : ''
                 } text-nord3 dark:text-nord6 dark:text-shadow lg:text-9xl tangerine `}
               >
                 Luis Pinheiro
@@ -51,14 +50,15 @@ const Index = () => {
                 className="text-xl font-semibold text-center dark:text-nord6 dark:text-shadow text-nord3 my-7 code"
               ></div>
             </div>
+
             <div className="p-5 border border-red-500">
               <p className="text-center text-red-500 ">Under construction</p>
             </div>
             <div className="flex flex-row flex-wrap content-around justify-center w-full px-5 text-2xl">
-              <IconLink to="/about" icon="fas fa-user-circle" title={'About'}></IconLink>
-              <IconLink to="/work" icon="fas fa-briefcase" title={'Work'} />
-              <IconLink to="/services" icon="fab fa-whmcs" title={'Services'} />
-              <IconLink to="/contact" icon="fas fa-envelope" title={'Contact'} />
+              <IconLink delay="animate__delay-4s" to="/about" icon="fas fa-user-circle" title={'About'}></IconLink>
+              <IconLink delay="animate__delay-1s" to="/work" icon="fas fa-briefcase" title={'Work'} />
+              <IconLink delay="animate__delay-5s" to="/services" icon="fab fa-whmcs" title={'Services'} />
+              <IconLink delay="animate__delay-3s" to="/contact" icon="fas fa-envelope" title={'Contact'} />
             </div>
             <div id="social-links " className="w-full mt-10 sm:max-w-md">
               <ul className="flex flex-wrap justify-around place-content-center">
@@ -88,5 +88,5 @@ const Index = () => {
   );
 };
 
-Index.Layout = AllPagesLayout;
-export default Index;
+index.Layout = AllPagesLayout;
+export default index;

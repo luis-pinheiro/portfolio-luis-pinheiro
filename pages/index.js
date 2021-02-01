@@ -1,4 +1,5 @@
 import React, { useContext } from 'react';
+import { withTranslation } from '../i18n';
 import Head from 'next/head';
 import { PlayContext } from './_app';
 import CardFolio from './../components/CardFolio';
@@ -13,7 +14,7 @@ import AllPagesLayout from './../layouts/allPagesLayout';
 //   require('../textScrambler');
 // }
 
-const index = () => {
+const index = ({ t }) => {
   const isPlaying = useContext(PlayContext);
 
   return (
@@ -42,7 +43,7 @@ const index = () => {
                   isPlaying ? 'animate__animated animate__rubberBand animate__infinite animate__delay-2s ' : ''
                 } text-nord3 dark:text-nord6 dark:text-shadow lg:text-9xl tangerine `}
               >
-                Luis Pinheiro
+                {t('greeting')}
               </h1>
 
               <div
@@ -89,4 +90,9 @@ const index = () => {
 };
 
 index.Layout = AllPagesLayout;
-export default index;
+
+index.getInitialProps = async () => ({
+  namespacesRequired: ['common'],
+});
+
+export default withTranslation('common')(index);

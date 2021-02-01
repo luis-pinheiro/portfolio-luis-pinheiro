@@ -1,6 +1,4 @@
 import React, { useContext } from 'react';
-import { withTranslation } from '../i18n';
-import PropTypes from 'prop-types';
 import Head from 'next/head';
 import { PlayContext } from './_app';
 import CardFolio from './../components/CardFolio';
@@ -8,6 +6,7 @@ import IconLink from '../components/IconLink';
 import SocialLinks from './../components/SocialLinks';
 import '@fortawesome/fontawesome-free/css/all.css';
 import AllPagesLayout from './../layouts/allPagesLayout';
+import { useRouter } from 'next/router';
 
 // import './../textScrambler';
 
@@ -15,8 +14,12 @@ import AllPagesLayout from './../layouts/allPagesLayout';
 //   require('../textScrambler');
 // }
 
-const index = ({ t }) => {
+const index = () => {
   const isPlaying = useContext(PlayContext);
+  let router = useRouter();
+
+  let greeting =
+    router.locale === 'en' ? 'Welcome' : router.locale === 'pt' ? 'Bem vindo' : router.locale === 'nl' ? 'Welkom' : '';
 
   return (
     <div className="place-self-center">
@@ -44,7 +47,7 @@ const index = ({ t }) => {
                   isPlaying ? 'animate__animated animate__rubberBand animate__infinite animate__delay-2s ' : ''
                 } text-nord3 dark:text-nord6 dark:text-shadow lg:text-9xl tangerine `}
               >
-                {t('greeting')}
+                {greeting}
               </h1>
 
               <div
@@ -92,12 +95,4 @@ const index = ({ t }) => {
 
 index.Layout = AllPagesLayout;
 
-index.getInitialProps = async () => ({
-  namespacesRequired: ['common'],
-});
-
-index.propTypes = {
-  t: PropTypes.func.isRequired,
-};
-
-export default withTranslation('common')(index);
+export default index;

@@ -1,5 +1,6 @@
 import React, { useContext } from 'react';
 import { withTranslation } from '../i18n';
+import PropTypes from 'prop-types';
 import Head from 'next/head';
 import { PlayContext } from './_app';
 import CardFolio from './../components/CardFolio';
@@ -94,5 +95,9 @@ index.Layout = AllPagesLayout;
 index.getInitialProps = async () => ({
   namespacesRequired: ['common'],
 });
+
+index.propTypes = {
+  t: PropTypes.func.isRequired,
+};
 
 export default withTranslation('common')(index);

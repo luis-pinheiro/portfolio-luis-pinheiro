@@ -1,0 +1,9 @@
+{
+  "greeting": "Welkom",
+  "pages": {
+    "about": "over",
+    "work": "werk",
+    "services": "diensten",
+    "contact": "contact"
+  }
+}

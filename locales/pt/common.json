@@ -1,0 +1,9 @@
+{
+  "greeting": "Bem Vindo",
+  "pages": {
+    "about": "sobre",
+    "work": "trabalhos",
+    "services": "serviços",
+    "contact": "contacto"
+  }
+}

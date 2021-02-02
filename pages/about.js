@@ -4,8 +4,10 @@ import '@fortawesome/fontawesome-free';
 import SocialLinks from '../components/SocialLinks';
 import AllPagesLayout from '../layouts/allPagesLayout';
 import Head from 'next/head';
+import useTranslation from 'next-translate/useTranslation';
 
 const about = ({ children }) => {
+  let { t } = useTranslation();
   return (
     // <CardFolio classes="w-screen h-screen">
     <div>
@@ -32,8 +34,7 @@ const about = ({ children }) => {
             </div>
             <div className="place-self-center">
               <h4 className="text-2xl text-center dark:text-nord6 dark:text-shadow text-nord3 px-7 lg:px-10 ">
-                I'm a Portuguese enthusiast self-taught Fullstack-developer evolving in the JavaScript ecosystem. <br />{' '}
-                I like to learn new stuffs concerning Web technologies.
+                {t('about:description')}
               </h4>
             </div>
           </div>

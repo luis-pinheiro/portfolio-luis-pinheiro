@@ -7,6 +7,7 @@ import SocialLinks from './../components/SocialLinks';
 import '@fortawesome/fontawesome-free/css/all.css';
 import AllPagesLayout from './../layouts/allPagesLayout';
 import { useRouter } from 'next/router';
+import useTranslation from 'next-translate/useTranslation';
 
 // import './../textScrambler';
 
@@ -16,10 +17,8 @@ import { useRouter } from 'next/router';
 
 const index = () => {
   const isPlaying = useContext(PlayContext);
-  let router = useRouter();
 
-  let greeting =
-    router.locale === 'en' ? 'Welcome' : router.locale === 'pt' ? 'Bem vindo' : router.locale === 'nl' ? 'Welkom' : '';
+  let { t } = useTranslation();
 
   return (
     <div className="place-self-center">
@@ -47,7 +46,7 @@ const index = () => {
                   isPlaying ? 'animate__animated animate__rubberBand animate__infinite animate__delay-2s ' : ''
                 } text-nord3 dark:text-nord6 dark:text-shadow lg:text-9xl tangerine `}
               >
-                {greeting}
+                {t('common:greeting')}
               </h1>
 
               <div
@@ -60,10 +59,25 @@ const index = () => {
               <p className="text-center text-red-500 ">Under construction</p>
             </div>
             <div className="flex flex-row flex-wrap content-around justify-center w-full px-5 text-2xl">
-              <IconLink delay="animate__delay-4s" to="/about" icon="fas fa-user-circle" title={'About'}></IconLink>
-              <IconLink delay="animate__delay-1s" to="/work" icon="fas fa-briefcase" title={'Work'} />
-              <IconLink delay="animate__delay-5s" to="/services" icon="fab fa-whmcs" title={'Services'} />
-              <IconLink delay="animate__delay-3s" to="/contact" icon="fas fa-envelope" title={'Contact'} />
+              <IconLink
+                delay="animate__delay-4s"
+                to="/about"
+                icon="fas fa-user-circle"
+                title={t('common:pages.about')}
+              ></IconLink>
+              <IconLink delay="animate__delay-1s" to="/work" icon="fas fa-briefcase" title={t('common:pages.work')} />
+              <IconLink
+                delay="animate__delay-5s"
+                to="/services"
+                icon="fab fa-whmcs"
+                title={t('common:pages.services')}
+              />
+              <IconLink
+                delay="animate__delay-3s"
+                to="/contact"
+                icon="fas fa-envelope"
+                title={t('common:pages.contact')}
+              />
             </div>
             <div id="social-links " className="w-full mt-10 sm:max-w-md">
               <ul className="flex flex-wrap justify-around place-content-center">

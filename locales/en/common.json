@@ -1,0 +1,9 @@
+{
+  "greeting": "Welcome",
+  "pages": {
+    "about": "about",
+    "work": "work",
+    "services": "services",
+    "contact": "contact"
+  }
+}

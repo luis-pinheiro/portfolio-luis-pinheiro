@@ -2,47 +2,47 @@ import '@fortawesome/fontawesome-free';
 import CardFolio from '../components/CardFolio';
 import CardHeader from '../components/CardHeader';
 import AllPagesLayout from '../layouts/allPagesLayout';
+import useTranslation from 'next-translate/useTranslation';
 
-const services = () => {
+const services = (props) => {
+  let { t } = useTranslation();
   return (
     // <CardFolio classes="w-screen h-screen">
     <CardFolio classes="">
-      <CardHeader icon="fab fa-whmcs" title="services" />
+      <CardHeader icon="fab fa-whmcs" title={t('common:pages.services')} />
       <div className="container flex flex-row flex-wrap content-around flex-1 h-full mx-auto ">
         <div className="lg:w-2/4 p-7">
-          <h4 className="text-2xl text-nord3 dark:text-nord6 dark:text-shadow ">
-            <i className="mr-2 fas fa-layer-group"></i>Graphic Design
+          <h4 className="text-2xl capitalize text-nord3 dark:text-nord6 dark:text-shadow">
+            <i className="mr-2 fas fa-layer-group"></i>
+            {t('services:graphicDesign.title')}
           </h4>
           <p className="pt-2 pl-4 text-nord3 dark:text-nord6 dark:text-shadow ">
-            I will analise websites running similar business and check for new tech trends to make a good looking design
-            for your business.
+            {t('services:graphicDesign.description')}
           </p>
         </div>
         <div className="lg:w-2/4 p-7">
-          <h4 className="text-2xl text-nord3 dark:text-nord6 dark:text-shadow ">
-            <i className="mr-2 fas fa-mobile-alt"></i>Responsive WebDesign
+          <h4 className="text-2xl capitalize text-nord3 dark:text-nord6 dark:text-shadow">
+            <i className="mr-2 fas fa-mobile-alt"></i>
+            {t('services:responsiveDesign.title')}
           </h4>
           <p className="pt-2 pl-4 text-nord3 dark:text-nord6 dark:text-shadow ">
-            I will create web pages that render's well on a variety of devices and window or screen sizes and compatible
-            with diferent web browsers.
+            {t('services:responsiveDesign.description')}
           </p>
         </div>
         <div className="lg:w-2/4 p-7">
-          <h4 className="text-2xl text-nord3 dark:text-nord6 dark:text-shadow ">
-            {/* <i className="fab fa-wordpress"></i> */}
-            {/* <i className="fab fa-joomla"></i> */}
-            <i className="mr-2 fas fa-code"></i>Custom WordPress and Joomla Themes
+          <h4 className="text-2xl capitalize text-nord3 dark:text-nord6 dark:text-shadow">
+            <i className="mr-2 fas fa-code"></i>
+            {t('services:themes.title')}
           </h4>
-          <p className="pt-2 pl-4 text-nord3 dark:text-nord6 dark:text-shadow ">
-            I create responsive websites that convert in both WordPress and Joomla
-          </p>
+          <p className="pt-2 pl-4 text-nord3 dark:text-nord6 dark:text-shadow ">{t('services:themes.description')}</p>
         </div>
         <div className="lg:w-2/4 p-7">
-          <h4 className="text-2xl text-nord3 dark:text-nord6 dark:text-shadow ">
-            <i className="mr-2 fas fa-magic"></i>Website Optimization
+          <h4 className="text-2xl capitalize text-nord3 dark:text-nord6 dark:text-shadow">
+            <i className="mr-2 fas fa-magic"></i>
+            {t('services:optimization.title')}
           </h4>
           <p className="pt-2 pl-4 text-nord3 dark:text-nord6 dark:text-shadow ">
-            Is your WebSite loading slow and or you want to get a new modern look, i can do that.
+            {t('services:optimization.description')}
           </p>
         </div>
       </div>
@@ -50,5 +50,9 @@ const services = () => {
   );
 };
 services.Layout = AllPagesLayout;
+
+export function getServerSideProps() {
+  return { props: {} };
+}
 
 export default services;

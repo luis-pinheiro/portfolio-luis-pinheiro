@@ -1,0 +1,14 @@
+{
+  "greeting": "Bem Vindo",
+  "pages": {
+    "about": "sobre",
+    "work": "trabalhos",
+    "services": "serviços",
+    "contact": "contacto"
+  },
+  "siteStatus": "em construção",
+  "goBackButton": "Voltar",
+  "404": "404 - Página não encontrada",
+  "error-with-status": "A {{statusCode}} error occurred on server",
+  "error-without-status": "An error occurred on the server"
+}

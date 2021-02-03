@@ -1,0 +1,18 @@
+{
+  "graphicDesign": {
+    "title": "Graphic Design",
+    "description": "I will analise websites running similar business and check for new tech trends to make a good looking design for your business."
+  },
+  "responsiveDesign": {
+    "title": "Responsive WebDesign",
+    "description": "I will create web pages that renders well on a variety of devices and window or screen sizes and compatible with different web browsers."
+  },
+  "themes": {
+    "title": "Custom Themes",
+    "description": "I create responsive websites that convert in both WordPress and Joomla"
+  },
+  "optimization": {
+    "title": "Website Optimization",
+    "description": "Is your WebSite loading slow and or you want to get a new modern look, i can do that."
+  }
+}

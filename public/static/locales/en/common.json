@@ -1,0 +1,14 @@
+{
+  "greeting": "Welcome",
+  "pages": {
+    "about": "about",
+    "work": "work",
+    "services": "services",
+    "contact": "contact"
+  },
+  "siteStatus": "under construction",
+  "goBackButton": "Go Back",
+  "404": "404 - Page Not Found",
+  "error-with-status": "A {{statusCode}} error occurred on server",
+  "error-without-status": "An error occurred on the server"
+}

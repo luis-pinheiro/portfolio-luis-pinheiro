@@ -67,7 +67,7 @@ const about = (props) => {
 
 about.Layout = AllPagesLayout;
 
-export function getServerSideProps() {
+export function getStaticProps() {
   return { props: {} };
 }
 

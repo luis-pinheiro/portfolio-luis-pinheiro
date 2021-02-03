@@ -8,7 +8,7 @@ export default function Custom404() {
 
   return (
     <CardFolio>
-      <h1>{t('common:404')}</h1>;
+      <h1>{t('common:404')}</h1>
     </CardFolio>
   );
 }

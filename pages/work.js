@@ -74,7 +74,7 @@ const work = (props) => {
 
 work.Layout = AllPagesLayout;
 
-export function getServerSideProps() {
+export function getStaticProps() {
   return { props: {} };
 }
 

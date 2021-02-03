@@ -15,7 +15,7 @@ const about = (props) => {
         <title>Luis Pinheiro | Portfolio</title>
         <link rel="icon" href="./favicon_io/favicon.ico" />
       </Head>
-      <CardHeader icon="fas fa-user-circle" title={t('about:title')} />
+      <CardHeader icon="fas fa-user-circle" title={t('common:pages.about')} />
       <CardFolio classes="">
         <div className="flex flex-col justify-around w-full h-full place-items-center">
           <div className="flex flex-col w-full mt-20 ">

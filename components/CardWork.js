@@ -37,11 +37,10 @@ const CardWork2 = ({ img, title, description, tags, link, linkCode }) => {
                   href={link}
                   target="_blank"
                   rel="noopener"
-                  title={`Visit ${title}`}
-                  className="flex flex-col items-center justify-center flex-1 w-full py-4 mx-auto text-center dark:hover:text-nord6 dark:text-shadow dark:text-nord4 dark:hover:text-shadow-lg hover:text-shadow text-nord3"
+                  className="flex flex-col items-center justify-center flex-1 w-full py-4 mx-auto text-center dark:hover:text-nord6 dark:text-shadow dark:text-nord4 dark:hover:text-shadow-lg text-nord3"
                 >
                   <i className="w-full h-5 fas fa-globe"></i>
-                  <p>Visit Website</p>
+                  <p>Website</p>
                 </a>
               )}
 
@@ -50,8 +49,7 @@ const CardWork2 = ({ img, title, description, tags, link, linkCode }) => {
                   href={linkCode}
                   target="_blank"
                   rel="noopener"
-                  title="View Source Code"
-                  className="flex flex-col items-center justify-center flex-1 w-full py-4 mx-auto text-center dark:hover:text-nord6 dark:text-shadow dark:text-nord4 dark:hover:text-shadow-lg hover:text-shadow text-nord3"
+                  className="flex flex-col items-center justify-center flex-1 w-full py-4 mx-auto text-center dark:hover:text-nord6 dark:text-shadow dark:text-nord4 dark:hover:text-shadow-lg text-nord3"
                 >
                   <i className="w-full h-5 fas fa-code"></i>
                   <p>Source Code</p>

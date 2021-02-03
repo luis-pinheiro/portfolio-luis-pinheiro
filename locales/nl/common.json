@@ -6,5 +6,6 @@
     "services": "diensten",
     "contact": "contact"
   },
-  "siteStatus": "aan het bouwen"
+  "siteStatus": "aan het bouwen",
+  "goBackButton": "Terug"
 }

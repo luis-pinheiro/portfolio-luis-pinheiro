@@ -6,5 +6,6 @@
     "services": "services",
     "contact": "contact"
   },
-  "siteStatus": "under construction"
+  "siteStatus": "under construction",
+  "goBackButton": "Go Back"
 }

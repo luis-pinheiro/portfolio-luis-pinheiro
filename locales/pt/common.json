@@ -6,5 +6,6 @@
     "services": "serviços",
     "contact": "contacto"
   },
-  "siteStatus": "em construção"
+  "siteStatus": "em construção",
+  "goBackButton": "Voltar"
 }

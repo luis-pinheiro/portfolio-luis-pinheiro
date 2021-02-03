@@ -2,10 +2,7 @@ module.exports = {
   important: true,
   purge: ['./pages/**/*.js', './components/**/*.js'],
   darkMode: 'class', // or 'media' or 'class'
-  i18n: {
-    locales: ['en-US'],
-    defaultLocale: 'en-US',
-  },
+
   theme: {
     extend: {
       boxShadow: {
@@ -18,6 +15,9 @@ module.exports = {
         free1: "url('/images/bg/freeimg_580291freejpg850_4x.jpg')",
         check: "url('/icons/check.svg')",
         landscape: "url('/images/landscape/2.jpg')",
+        pt: "url('/images/flags/PT.svg')",
+        nl: "url('/images/flags/NL.svg')",
+        en: "url('/images/flags/GB.svg')",
       }),
       zIndex: {
         60: 60,

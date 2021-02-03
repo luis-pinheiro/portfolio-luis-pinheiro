@@ -2,12 +2,12 @@ import CardFolio from '../components/CardFolio';
 import CardHeader from '../components/CardHeader';
 import '@fortawesome/fontawesome-free';
 import SocialLinks from '../components/SocialLinks';
-import AllPagesLayout from '../layouts/allPagesLayout';
 import Head from 'next/head';
 import useTranslation from 'next-translate/useTranslation';
+import AllPagesLayout from '../layouts/allPagesLayout';
 
-const about = ({ children }) => {
-  let { t } = useTranslation();
+const about = (props) => {
+  let { t } = useTranslation('about');
   return (
     // <CardFolio classes="w-screen h-screen">
     <div>
@@ -15,7 +15,7 @@ const about = ({ children }) => {
         <title>Luis Pinheiro | Portfolio</title>
         <link rel="icon" href="./favicon_io/favicon.ico" />
       </Head>
-      <CardHeader icon="fas fa-user-circle" title="About" />
+      <CardHeader icon="fas fa-user-circle" title={t('about:title')} />
       <CardFolio classes="">
         <div className="flex flex-col justify-around w-full h-full place-items-center">
           <div className="flex flex-col w-full mt-20 ">
@@ -66,5 +66,9 @@ const about = ({ children }) => {
 };
 
 about.Layout = AllPagesLayout;
+
+export function getServerSideProps() {
+  return { props: {} };
+}
 
 export default about;

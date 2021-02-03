@@ -6,7 +6,6 @@ import IconLink from '../components/IconLink';
 import SocialLinks from './../components/SocialLinks';
 import '@fortawesome/fontawesome-free/css/all.css';
 import AllPagesLayout from './../layouts/allPagesLayout';
-import { useRouter } from 'next/router';
 import useTranslation from 'next-translate/useTranslation';
 
 // import './../textScrambler';
@@ -56,7 +55,7 @@ const index = () => {
             </div>
 
             <div className="p-5 border border-red-500">
-              <p className="text-center text-red-500 ">Under construction</p>
+              <p className="text-center text-red-500 capitalize">{t('common:siteStatus')}</p>
             </div>
             <div className="flex flex-row flex-wrap content-around justify-center w-full px-5 text-2xl">
               <IconLink

@@ -1,7 +1,6 @@
 import useTranslation from 'next-translate/useTranslation';
 
 export default function ContactForm(props) {
-  console.log(props);
   let { t } = useTranslation();
 
   return (

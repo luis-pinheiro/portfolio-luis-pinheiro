@@ -1,11 +1,16 @@
-export default function ContactForm() {
+import useTranslation from 'next-translate/useTranslation';
+
+export default function ContactForm(props) {
+  console.log(props);
+  let { t } = useTranslation();
+
   return (
     <form name="contact" action="/success" method="POST" data-netlify="true" className="w-full mx-auto p-7">
       <div className="grid grid-cols-1 gap-6">
         <input type="hidden" name="form-name" value="contact" />
         <div className="block">
-          <label htmlFor="yourname" className="text-nord6 dark:text-shadow">
-            Your Name:
+          <label htmlFor="yourname" className="capitalize text-nord6 dark:text-shadow">
+            {props.name}
           </label>{' '}
           <br />
           <input
@@ -17,8 +22,8 @@ export default function ContactForm() {
           />
         </div>
         <div className="block">
-          <label htmlFor="youremail" className="text-nord6 dark:text-shadow">
-            Your Email:
+          <label htmlFor="youremail" className="capitalize text-nord6 dark:text-shadow">
+            {props.email}
           </label>{' '}
           <br />
           <input
@@ -30,8 +35,8 @@ export default function ContactForm() {
           />
         </div>
         <div className="block">
-          <label htmlFor="yourmessage" className="text-nord6 dark:text-shadow">
-            Message:
+          <label htmlFor="yourmessage" className="capitalize text-nord6 dark:text-shadow">
+            {props.message}
           </label>{' '}
           <br />
           <textarea
@@ -47,10 +52,14 @@ export default function ContactForm() {
             className="block w-full max-w-md px-4 py-2 mx-auto text-xs font-bold uppercase align-middle rounded outline-none text-nord1 bg-nord14 elevation-1 hover:bg-nord7 hover:elevation-2 "
             style={{ transition: 'all .15s ease' }}
           >
-            Send
+            {props.send}
           </button>
         </div>
       </div>
     </form>
   );
+}
+
+export function getServerSideProps() {
+  return { props: {} };
 }

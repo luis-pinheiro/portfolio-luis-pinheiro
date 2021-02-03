@@ -5,6 +5,7 @@
     "*": ["common"],
     "/about": ["about"],
     "/work": ["work"],
-    "/services": ["services"]
+    "/services": ["services"],
+    "/contact": ["contact"]
   }
 }

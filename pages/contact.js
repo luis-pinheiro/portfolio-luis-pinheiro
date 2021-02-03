@@ -31,7 +31,12 @@ const contact = (props) => {
 
           <div className="flex w-full h-full p-10 mx-auto rounded lg:h-auto lg:w-2/4 dark:bg-nord2 border-nord2 elevation-2 bg-nord9 place-items-center">
             {/* Form */}
-            <ContactForm />
+            <ContactForm
+              name={t('contact:name')}
+              email={t('contact:email')}
+              message={t('contact:message')}
+              send={t('contact:send')}
+            />
           </div>
           {/* <div className="flex h-full mt-7">
             <ContactSocialLinksGroup cls=" sm:hidden flex flex-wrap flex-auto justify-evenly content-center " />

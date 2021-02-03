@@ -3,5 +3,9 @@ const nextTranslate = require('next-translate');
 module.exports = {
   // Target must be serverless
   target: 'serverless',
-  ...nextTranslate(),
+  ...nextTranslate({
+    webpack: (config, { isServer, webpack }) => {
+      return config;
+    },
+  }),
 };

@@ -1,15 +1,17 @@
 import React from 'react';
 import SpeechNavigation from './../components/SpeechNavigation';
-import { SwitchToPt, SwitchToEn, SwitchToNl } from './../components/SwitchLanguage';
+import SwitchToEn from '../components/SwitchToEn';
+import SwitchToPt from '../components/SwitchToPt';
+import SwitchToNl from '../components/SwitchToNl';
 
 export default function AllPagesLayout(props) {
   return (
     <div>
       {props.children}
-      <SpeechNavigation />
       <SwitchToPt />
       <SwitchToNl />
       <SwitchToEn />
+      <SpeechNavigation />
     </div>
   );
 }

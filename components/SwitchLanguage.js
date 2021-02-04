@@ -7,11 +7,11 @@ export function SwitchToPt() {
   return (
     <div>
       <Link href={router.asPath} locale="pt">
-        <a className="fixed block right-5 top-40">
-          <sapn
+        <a className="fixed block right-5 z-70 top-40">
+          <span
             className="block w-10 h-10 bg-center bg-cover border-2 rounded-full border-nord4 elevation-5 z-70 dark:border-nord3"
             style={{ backgroundImage: `url("/images/flags/PT.png")` }}
-          ></sapn>
+          ></span>
         </a>
       </Link>
     </div>
@@ -23,11 +23,11 @@ export function SwitchToNl() {
   return (
     <div>
       <Link href={router.asPath} locale="nl">
-        <a className="fixed block right-5 top-52">
-          <sapn
+        <a className="fixed block right-5 z-70 top-52">
+          <span
             className="block w-10 h-10 bg-center bg-cover border-2 rounded-full border-nord4 elevation-5 z-70 dark:border-nord3"
             style={{ backgroundImage: `url("/images/flags/NL.png")` }}
-          ></sapn>
+          ></span>
         </a>
       </Link>
     </div>
@@ -39,11 +39,11 @@ export function SwitchToEn() {
   return (
     <div>
       <Link href={router.asPath} locale="en">
-        <a className="fixed block right-5 top-64">
-          <sapn
+        <a className="fixed block right-5 z-70 top-64">
+          <span
             className="block w-10 h-10 bg-center bg-cover border-2 rounded-full border-nord4 elevation-5 z-70 dark:border-nord3"
             style={{ backgroundImage: `url("/images/flags/GB.png")` }}
-          ></sapn>
+          ></span>
         </a>
       </Link>
     </div>

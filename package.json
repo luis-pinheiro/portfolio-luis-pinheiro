@@ -30,8 +30,5 @@
     "tailwindcss-debug-screens": "^2.0.0",
     "tailwindcss-elevation": "^1.0.1",
     "tailwindcss-typography": "^3.1.0"
-  },
-  "devDependencies": {
-    "@netlify/plugin-nextjs": "^1.1.1"
   }
 }

@@ -1779,18 +1779,6 @@
     "@babel/runtime" "^7.7.2"
     "regenerator-runtime" "^0.13.3"
 
-"@netlify/plugin-nextjs@^1.1.1":
-  "integrity" "sha512-//GbU7704NzLqtsGFaFGH08juiYsHN/eptWzUTCSuLFv1fXI4weNNRvjtclEwKs4cAdOk/uRHh91VpFBjTHSsw=="
-  "resolved" "https://registry.npmjs.org/@netlify/plugin-nextjs/-/plugin-nextjs-1.1.1.tgz"
-  "version" "1.1.1"
-  dependencies:
-    "chalk" "^4.1.0"
-    "find-up" "^4.1.0"
-    "jimp" "^0.16.1"
-    "make-dir" "^3.1.0"
-    "next-on-netlify" "2.8.7"
-    "semver" "^7.3.2"
-
 "@next/env@10.0.5":
   "integrity" "sha512-dw6Q7PALIo7nTFfaB4OnRDte3EikrApGtjX/4cRmYXLh+uudDI50aS39MaGeKKZ2mxPKoNiFcY6Slv1f6KIPOw=="
   "resolved" "https://registry.npmjs.org/@next/env/-/env-10.0.5.tgz"
@@ -5610,7 +5598,7 @@
     "pify" "^4.0.1"
     "semver" "^5.6.0"
 
-"make-dir@^3.0.2", "make-dir@^3.1.0":
+"make-dir@^3.0.2":
   "integrity" "sha512-g3FeP20LNwhALb/6Cz6Dd4F2ngze0jz7tbzrD2wAV+o9FeNHe4rL+yK2md0J/fiSf1sa1ADhXqi5+oVwOM/eGw=="
   "resolved" "https://registry.npmjs.org/make-dir/-/make-dir-3.1.0.tgz"
   "version" "3.1.0"
@@ -6272,7 +6260,7 @@
   "resolved" "https://registry.npmjs.org/neo-async/-/neo-async-2.6.2.tgz"
   "version" "2.6.2"
 
-"next-on-netlify@^2.8.4", "next-on-netlify@2.8.7":
+"next-on-netlify@^2.8.4":
   "integrity" "sha512-3iNgKwwIShxerSwf9moFEeRiINvj46/xnvejSo6jYvXFdKRLYJrMr3aeyWD8NMsJ6nVRiiWk4Fv0df/wee8qfw=="
   "resolved" "https://registry.npmjs.org/next-on-netlify/-/next-on-netlify-2.8.7.tgz"
   "version" "2.8.7"

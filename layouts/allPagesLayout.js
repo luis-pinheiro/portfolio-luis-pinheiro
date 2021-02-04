@@ -5,11 +5,11 @@ import { SwitchToPt, SwitchToEn, SwitchToNl } from './../components/SwitchLangua
 export default function AllPagesLayout(props) {
   return (
     <div>
+      {props.children}
       <SpeechNavigation />
       <SwitchToPt />
       <SwitchToNl />
       <SwitchToEn />
-      {props.children}
     </div>
   );
 }

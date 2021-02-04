@@ -1,5 +1,3 @@
 [[redirects]]
   from = "/"
-  to = "https://portfolio-luis-pinheiro.vercel.app/
-  status = 404
-  force = true
+  to = "https://portfolio-luis-pinheiro.vercel.app/"

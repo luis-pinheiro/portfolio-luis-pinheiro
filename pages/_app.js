@@ -41,7 +41,8 @@ function MyApp({ Component, pageProps }) {
           </PlayContext.Provider>
         </div>
       </Layout>
-      <div className="flex justify-center align-middle">
+
+      {/* <div className="flex justify-center align-middle">
         <ReactAudioPlayer
           src="/audio/ignition.mp3"
           controls
@@ -49,7 +50,7 @@ function MyApp({ Component, pageProps }) {
           onPlay={toggleIsPlaying}
           onPause={toggleIsPlaying}
         />
-      </div>
+      </div> */}
     </div>
   );
 }

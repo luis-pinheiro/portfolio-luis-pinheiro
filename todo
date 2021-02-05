@@ -1,5 +1,9 @@
 Global:
   - Add Readme
+  Use:
+    - https://github.com/twbs/rfs
+    - http://samherbert.net/svg-loaders/
+
   Add translation:
     - 404 page
     - Speech screen

@@ -45,25 +45,31 @@ const SpeechNavigation = () => {
   return (
     <div id="speech" className="">
       {listening && (
-        <div className="fixed top-0 flex flex-col items-center justify-around w-screen h-screen bg-opacity-90 dark:bg-nord3 bg-nord4 z-60">
-          {/* <h4 className={`${!listening ? 'hidden' : ''} text-lg font-semibold text-shadow text-nord6`}>Listening</h4> */}
-          <h4 className="font-semibold text-7xl tangerine text-nord3 dark:text-nord4 dark:text-shadow ">
-            A escutar em português.
-          </h4>
-          <p
-            className={`${!listening ? 'hidden' : ''} text-4xl font-medium dark:text-shadow text-nord3 dark:text-nord6`}
-          >
-            {' '}
-            {transcript}
-          </p>
-          <div className="items-center justify-center p-5 rounded bg-nord7 elevation-2">
-            <h5 className="text-2xl text-center text-nord2">Como funciona?</h5>
-            <p className="text-center text-nord2">Diz:</p>
-            <p className="text-center text-nord2">"Vai para [pagina]" ou "Abre [pagina]"</p>
-            <p className="text-center text-nord2">Exemplo:</p>
-            <p className="text-center text-nord2"> "Abre trabalhos"</p>
-            <p className="text-center text-nord2">ou</p>
-            <p className="text-center text-nord2"> "Vai para trabalhos"</p>
+        <div
+          className="fixed top-0 flex flex-col items-center justify-around w-screen h-screen bg-center bg-no-repeat bg-contain bg-rings bg-opacity-90 dark:bg-nord3 bg-nord4 z-60"
+          style={{ backgroundBlendMode: 'hue' }}
+        >
+          <div className="flex flex-col items-center justify-around w-screen h-screen bg-center bg-no-repeat ">
+            <h4 className="font-semibold text-7xl tangerine text-nord3 dark:text-nord5 dark:text-shadow ">
+              A escutar em português.
+            </h4>
+            <p
+              className={`${
+                !listening ? 'hidden' : ''
+              } text-4xl font-medium dark:text-shadow text-nord3 dark:text-nord6`}
+            >
+              {' '}
+              {transcript}
+            </p>
+            <div className="items-center justify-center p-5 rounded bg-nord7 elevation-2">
+              <h5 className="text-2xl text-center text-nord2">Como funciona?</h5>
+              <p className="text-center text-nord2">Diz:</p>
+              <p className="text-center text-nord2">"Vai para [pagina]" ou "Abre [pagina]"</p>
+              <p className="mt-2 text-xl text-center text-nord2">Exemplo:</p>
+              <p className="text-center text-nord2"> "Abre trabalhos"</p>
+              <p className="text-center text-nord2">ou</p>
+              <p className="text-center text-nord2"> "Vai para trabalhos"</p>
+            </div>
           </div>
         </div>
       )}

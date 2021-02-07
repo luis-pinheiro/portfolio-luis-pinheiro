@@ -2,5 +2,9 @@
   "name": "Your Name",
   "email": "Your Email",
   "message": "Message",
-  "send": "send"
+  "send": "send",
+  "sending": "sending",
+  "submitted": "submitted",
+  "successMesage": "Your message has been successfully sent. I will contact you very soon!",
+  "error": "An error occurred, please try again later."
 }

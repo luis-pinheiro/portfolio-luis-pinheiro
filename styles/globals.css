@@ -1,9 +1,11 @@
-
-
 @import 'animate.css/animate.css';
 
 body {
   @apply debug-screens;
+}
+
+.bg-profitcreations {
+  background-attachment: fixed !important;
 }
 
 /* Animate.css */

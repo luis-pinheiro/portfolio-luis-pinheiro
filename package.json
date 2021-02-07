@@ -6,13 +6,15 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "tcv": "npx tailwind-config-viewer"
+    "tcv": "npx tailwind-config-viewer",
+    "..": "yarn && yarn dev"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.2",
     "@tailwindcss/forms": "^0.2.1",
     "animate.css": "^4.1.1",
     "autoprefixer": "^10.2.1",
+    "axios": "^0.21.1",
     "next": "10.0.5",
     "next-on-netlify": "^2.8.4",
     "next-translate": "^1.0.2",

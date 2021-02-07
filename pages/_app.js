@@ -19,6 +19,8 @@ function MyApp({ Component, pageProps }) {
 
   const Layout = Component.Layout || EmptyLayout;
 
+  // ./Play
+
   return (
     <div
       className={`relative flex flex-col justify-center min-h-screen align-middle bg-center bg-no-repeat bg-cover

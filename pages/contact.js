@@ -4,8 +4,9 @@ import CardHeader from './../components/CardHeader';
 import '@fortawesome/fontawesome-free';
 import ContactSocialLinksGroup from './../components/ContactSocialLinksGroup';
 import AllPagesLayout from './../layouts/allPagesLayout';
-import ContactForm from './../components/ContactForm';
+// import ContactForm from './../components/ContactForm';
 import useTranslation from 'next-translate/useTranslation';
+import ContactFormVercel from '../components/ContactFormVercel';
 
 const contact = (props) => {
   const [success, setSuccess] = useState(false);
@@ -31,12 +32,21 @@ const contact = (props) => {
 
           <div className="flex w-full h-full p-10 mx-auto rounded lg:h-auto lg:w-2/4 dark:bg-nord2 border-nord2 elevation-2 bg-nord9 place-items-center">
             {/* Form */}
-            <ContactForm
+            <ContactFormVercel
+              email={t('contact:email')}
+              message={t('contact:message')}
+              send={t('contact:send')}
+              sending={t('contact:sending')}
+              submitted={t('contact:submitted')}
+              successMesage={t('contact:successMesage')}
+              error={t('contact:error')}
+            />
+            {/* <ContactForm
               name={t('contact:name')}
               email={t('contact:email')}
               message={t('contact:message')}
               send={t('contact:send')}
-            />
+            /> */}
           </div>
           {/* <div className="flex h-full mt-7">
             <ContactSocialLinksGroup cls=" sm:hidden flex flex-wrap flex-auto justify-evenly content-center " />

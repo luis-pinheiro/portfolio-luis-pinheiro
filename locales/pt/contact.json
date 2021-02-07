@@ -2,5 +2,9 @@
   "name": "Seu Nome",
   "email": "Seu Email",
   "message": "mensagem",
-  "send": "enviar"
+  "send": "enviar",
+  "sending": "A enviar",
+  "submitted": "Enviado",
+  "successMesage": "A sua mensagem foi enviada com sucesso. Em breve entrarei em contacto consigo!",
+  "error": "Ocorreu um erro. Por favor tente novamente mais tarde."
 }

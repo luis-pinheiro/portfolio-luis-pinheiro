@@ -2,5 +2,9 @@
   "name": "uw naam",
   "email": "jouw email",
   "message": "bericht",
-  "send": "sturen"
+  "send": "sturen",
+  "sending": "Bezig met verzenden",
+  "submitted": "voorgelegd",
+  "successMesage": "Uw bericht is succesvol verzonden. Ik neem spoedig contact met u op!",
+  "error": "Er is een fout opgetreden, probeer het later opnieuw."
 }

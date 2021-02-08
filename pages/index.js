@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useEffect } from 'react';
 import Head from 'next/head';
 import { PlayContext } from './_app';
 import CardFolio from './../components/CardFolio';
@@ -7,12 +7,32 @@ import SocialLinks from './../components/SocialLinks';
 import '@fortawesome/fontawesome-free/css/all.css';
 import AllPagesLayout from './../layouts/allPagesLayout';
 import useTranslation from 'next-translate/useTranslation';
-
+import { useDencrypt } from 'use-dencrypt-effect';
 // import './../textScrambler';
 
 // if (typeof window !== 'undefined') {
 //   require('../textScrambler');
 // }
+
+const values = ['I Design', 'I Create', 'I Optimize', "I'm a Self-Taught Techie", "That's The Difference"];
+
+const Example = () => {
+  const { result, dencrypt } = useDencrypt();
+
+  React.useEffect(() => {
+    let i = 0;
+
+    const action = setInterval(() => {
+      dencrypt(values[i]);
+
+      i = i === values.length - 1 ? 0 : i + 1;
+    }, 5000);
+
+    return () => clearInterval(action);
+  }, []);
+
+  return <h1>{result}</h1>;
+};
 
 const index = () => {
   const isPlaying = useContext(PlayContext);
@@ -52,7 +72,9 @@ const index = () => {
               <div
                 id="scramble"
                 className="text-xl font-semibold text-center dark:text-nord6 dark:text-shadow text-nord3 my-7 code"
-              ></div>
+              >
+                <Example />
+              </div>
             </div>
 
             <div className="p-5 border border-red-500">

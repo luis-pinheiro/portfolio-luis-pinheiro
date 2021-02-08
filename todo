@@ -1,5 +1,6 @@
 Global:
   - Add Readme
+  - Add animations
   Use:
     - https://github.com/twbs/rfs
     - http://samherbert.net/svg-loaders/

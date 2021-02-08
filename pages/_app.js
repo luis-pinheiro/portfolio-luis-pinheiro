@@ -1,4 +1,4 @@
-import React, { useState, useContext } from 'react';
+import React, { useState } from 'react';
 import App from 'next/app';
 import Head from 'next/head';
 import Switch from './../components/Switch2';
@@ -6,16 +6,13 @@ import 'tailwindcss/tailwind.css';
 import '../styles/globals.css';
 import ReactAudioPlayer from 'react-audio-player';
 // import 'animate.css/animate.css';
+import Music from './../components/Music';
 
 export const PlayContext = React.createContext();
 
 function MyApp({ Component, pageProps }) {
   const [isToggled, setIsToggled] = useState(false);
-  const [isPlaying, setIsPLaying] = useState(false);
-
-  function toggleIsPlaying() {
-    setIsPLaying((isPlaying) => !isPlaying);
-  }
+  const [isPlaying, setIsplaying] = useState(false);
 
   const Layout = Component.Layout || EmptyLayout;
 
@@ -39,6 +36,7 @@ function MyApp({ Component, pageProps }) {
       <Layout>
         <div>
           <PlayContext.Provider value={isPlaying}>
+            <Music isPlaying={isPlaying} onToggle={() => setIsplaying(!isPlaying)} />
             <Component {...pageProps} />
           </PlayContext.Provider>
         </div>

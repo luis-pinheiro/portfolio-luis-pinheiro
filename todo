@@ -23,7 +23,7 @@ Global:
       - Add abort button
   Pages:
     - Add work item full image to be seen
-    - Add red icon to sinalize when the browser is listening to microphone
+    - Add red icon to sinalize when the browser is listening to microphone @done
     Index:
       - Separate scrambler text from title Luis Pinheiro to another div or install react scrambler component
     Work:
@@ -34,4 +34,4 @@ Global:
       - Add languages that I speek
       - Add certifications
     Contact:
-      - Make contact form works
+      - Make contact form works @done

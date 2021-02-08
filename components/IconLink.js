@@ -6,6 +6,8 @@ import 'animate.css/animate.css';
 const iconLink = ({ to, icon, title, delay }) => {
   const isPlaying = useContext(PlayContext);
 
+  // console.log('isPlaying -> ', isPlaying);
+
   return (
     <div
       className={` ${

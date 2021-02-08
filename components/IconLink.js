@@ -5,13 +5,14 @@ import 'animate.css/animate.css';
 
 const iconLink = ({ to, icon, title, delay }) => {
   const isPlaying = useContext(PlayContext);
+  let playing = isPlaying.isPlaying;
 
-  // console.log('isPlaying -> ', isPlaying);
+  console.log('playing Icon -> ', playing);
 
   return (
     <div
       className={` ${
-        isPlaying ? 'animate__animated animate__heartBeat animate__infinite ' + delay : ''
+        playing ? 'animate__animated animate__heartBeat animate__infinite ' + delay : ''
       } flex-1 p-0 m-2 text-center align-middle rounded-2xl`}
     >
       <Link href={to}>

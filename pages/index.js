@@ -16,6 +16,7 @@ import useTranslation from 'next-translate/useTranslation';
 
 const index = () => {
   const isPlaying = useContext(PlayContext);
+  let playing = isPlaying.isPlaying;
 
   let { t } = useTranslation();
 
@@ -31,7 +32,7 @@ const index = () => {
           src="/images/profile1.png"
           alt="Picture of the author"
           className={`${
-            isPlaying ? 'animate__animated animate__headShake animate__infinite ' : ''
+            playing ? 'animate__animated animate__headShake animate__infinite ' : ''
           } z-50 border-8 rounded-full border-opacity-90 profile-img border-nord4 dark:border-nord0 `}
         />
       </div>
@@ -42,7 +43,7 @@ const index = () => {
             <div className="mt-24 ">
               <h1
                 className={`flex text-6xl text-center transition-colors ${
-                  isPlaying ? 'animate__animated animate__rubberBand animate__infinite animate__delay-2s ' : ''
+                  playing ? 'animate__animated animate__rubberBand animate__infinite animate__delay-2s ' : ''
                 } text-nord3 dark:text-nord6 dark:text-shadow lg:text-9xl tangerine `}
               >
                 {t('common:greeting')}

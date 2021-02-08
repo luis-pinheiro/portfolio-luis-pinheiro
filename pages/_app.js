@@ -6,7 +6,7 @@ import 'tailwindcss/tailwind.css';
 import '../styles/globals.css';
 import ReactAudioPlayer from 'react-audio-player';
 // import 'animate.css/animate.css';
-import Music from './../components/Music';
+import DynamicMusic from './../components/DynamicMusic';
 
 export const PlayContext = React.createContext();
 
@@ -15,6 +15,10 @@ function MyApp({ Component, pageProps }) {
   const [isPlaying, setIsplaying] = useState(false);
 
   const Layout = Component.Layout || EmptyLayout;
+
+  const togglePlay = () => {
+    setIsplaying((isPlaying) => !isPlaying);
+  };
 
   // ./Play
 
@@ -35,8 +39,8 @@ function MyApp({ Component, pageProps }) {
       </Head>
       <Layout>
         <div>
-          <PlayContext.Provider value={isPlaying}>
-            <Music isPlaying={isPlaying} onToggle={() => setIsplaying(!isPlaying)} />
+          <PlayContext.Provider value={{ isPlaying, togglePlay }}>
+            <DynamicMusic />
             <Component {...pageProps} />
           </PlayContext.Provider>
         </div>

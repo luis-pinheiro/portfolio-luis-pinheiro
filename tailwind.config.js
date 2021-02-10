@@ -228,6 +228,7 @@ module.exports = {
       componentPrefix: 'c-', // the prefix to use for text style classes
     }),
     require('tailwind-nord'),
+    require('./responsive-typography')(['responsive']),
   ],
   future: {
     purgeLayersByDefault: true,

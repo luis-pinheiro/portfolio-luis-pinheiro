@@ -2,13 +2,11 @@ Global:
   - Add Readme
   - Add animations
   Use:
-    - https://github.com/twbs/rfs
-    - http://samherbert.net/svg-loaders/
+    - https://mkosir.github.io/react-parallax-tilt/?path=/story/react-parallax-tilt--parallax-effect
+    - https://reactjsexample.com/a-react-component-that-gives-your-text-a-typewriting-effect/
+    - https://reactjsexample.com/confetti-without-the-cleanup/
 
   Add translation:
-    - 404 page @done
-    - Speech screen @done
-  - Add speech recognition in pt and nl @done
   - check https://www.youtube.com/redirect?redir_token=QUFFLUhqa1pTMWk4OHluOXU1Rk80UHlvZHJFdW16UGpKUXxBQ3Jtc0trVTlSMUxEWWZsSDFfU2JMV0o3MVY2RWNWWWVtckRXUzk5eHVybVVEUFI0elZaYXFTMHpPNEI3TlNJTC0xZUN0RGhseFJUcTloNDVQZUhHRVlCYTdFdFROMVVJeVM0TWtIUWMzX1hlTE1qV0x0WmNFTQ%3D%3D&v=Rbi52ZYtVKM&q=https%3A%2F%2Fdevelopers.google.com%2Fsearch%2Fdocs%2Fadvanced%2Fcrawling%2Flocalized-versions%3Fvisit_id%3D637421907601920248-2806527001%26rd%3D1&event=video_description
   Components:
     CardWork:
@@ -16,17 +14,11 @@ Global:
       - Add link to full image
       - Add more details about de project
       - Ajust CardWork to full size
-    CardHeader:
-      - Remove text on smallest screen size
-    Play:
-      - Add a play button to de side and remove the old one
     Speech:
       - Add abort button
   Pages:
     - Add work item full image to be seen
-    - Add red icon to sinalize when the browser is listening to microphone @done
     Index:
-      - Separate scrambler text from title Luis Pinheiro to another div or install react scrambler component
     Work:
       - Add this portfolio also
     About:
@@ -35,4 +27,4 @@ Global:
       - Add languages that I speek
       - Add certifications
     Contact:
-      - Make contact form works @done
+      - Adjust layout om small screens

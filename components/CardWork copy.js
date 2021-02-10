@@ -13,26 +13,14 @@ const CardWork2 = ({ img, title, description, tags, link, linkCode }) => {
   return (
     <Tilt className="parallax-effect" perspective={500}>
       {/* <div className="place-self-center"> */}
-
-      <div
-        className="pb-4 overflow-hidden text-center border-transparent rounded-lg card-work bg-nord6 dark:bg-nord1 elevation-2 hover:elevation-4"
-        style={{ width: '300px', height: '400px' }}
-      >
+      <div className="pb-2 overflow-hidden text-center border-transparent rounded-lg card-work inner-element bg-nord6 dark:bg-nord1 elevation-2 hover:elevation-4">
+        <img className="object-cover object-center w-full hover:w-11\/12 " src={img} alt={title} />
         {/* <div className="h-full"> */}
         {/* <div className="grid px-5 pt-5 pb-2 "> */}
         {/* <h2 className="mb-1 text-xs font-medium tracking-widest text-gray-500 title-font">CATEGORY</h2> */}
-
-        {/* </div> */}
-        {/* </div> */}
-      </div>
-      {/* </div> */}
-
-      <div
-        className="flex flex-col justify-center pb-4 text-center inner-element"
-        style={{ width: '264px', marginTop: '-377px', height: '353px' }}
-      >
-        <img className="object-cover object-center rounded-t-lg img-card" src={img} alt={title} width="300px" />
-        <h1 className="mb-3 text-xl font-medium text-nord0 dark:text-nord6 dark:text-shadow title-font ">{title}</h1>
+        <h1 className="mb-3 text-xl font-medium text-nord0 dark:text-nord6 dark:text-shadow inner-element title-font ">
+          {title}
+        </h1>
         <p className="mb-3 leading-relaxed text-nord1 dark:text-nord5 dark:text-shadow ">{description}</p>
         <div className="flex flex-wrap justify-center text-center">
           {tags.split(' ').map((tag) => {
@@ -71,7 +59,10 @@ const CardWork2 = ({ img, title, description, tags, link, linkCode }) => {
             </a>
           )}
         </div>
+        {/* </div> */}
+        {/* </div> */}
       </div>
+      {/* </div> */}
     </Tilt>
   );
 };

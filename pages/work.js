@@ -17,12 +17,13 @@ const work = (props) => {
       <CardHeader icon="fas fa-briefcase" title={t('common:pages.work')} />
 
       <CardFolio classes="">
-        <div className="container grid w-full h-full px-5 mx-auto mb-5 gap-7 lg:pt-20 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 auto-rows-auto">
+        <div className="container grid w-full h-full px-5 mx-auto mb-28 gap-7 lg:pt-20 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 auto-rows-auto">
+          {/* <div className="flex flex-row flex-wrap justify-center w-full h-full px-5 mx-auto mb-5 space-y-12 lg:pt-20"> */}
           <CardWork
             img="/images/portfolio/profitcreations.png"
             title={t('work:oldPortfolio.title')}
             description={t('work:oldPortfolio.description')}
-            tags="HTML CSS JAVASCRIPT BOOTSTRAP JQUERY GULP NPM SASS"
+            tags="BOOTSTRAP JQUERY SASS gulp"
             link="https://luis-pinheiro.github.io/"
             linkCode="https://github.com/luis-pinheiro/luis-pinheiro.github.io"
           />
@@ -30,7 +31,7 @@ const work = (props) => {
             img="/images/portfolio/latuta.png"
             title="Latuta"
             description="WordPress Theme"
-            tags="HTML CSS JAVASCRIPT MATERIALIZECSS JQUERY WORDPRESS GULP NPM SASS"
+            tags="MATERIALIZECSS WORDPRESS SASS"
             link=""
             linkCode="https://github.com/luis-pinheiro/Latuta"
           />
@@ -38,7 +39,7 @@ const work = (props) => {
             img="/images/portfolio/nc-customs.png"
             title="NC-Customs"
             description="WordPress Theme"
-            tags="HTML CSS JAVASCRIPT MATERIALIZECSS JQUERY WORDPRESS GULP NPM SASS wd_s"
+            tags="MATERIALIZECSS WORDPRESS SASS"
             link=""
             linkCode="https://bitbucket.org/ProfitCreations/nccustoms-wp/src/master/"
           />
@@ -46,7 +47,7 @@ const work = (props) => {
             img="/images/portfolio/Trendytv.png"
             title="TrendyTV"
             description="Website"
-            tags="HTML CSS JAVASCRIPT BOOTSTRAP JQUERY LESS"
+            tags="HTML BOOTSTRAP JQUERY LESS"
             link=""
             linkCode=""
           />
@@ -54,7 +55,7 @@ const work = (props) => {
             img="/images/portfolio/vastgoedjunior.png"
             title="VastGoedJunior"
             description="Website"
-            tags="HTML CSS JAVASCRIPT BOOTSTRAP JQUERY JOOMLA LESS"
+            tags="BOOTSTRAP JQUERY JOOMLA LESS"
             link=""
             linkCode=""
           />
@@ -62,7 +63,7 @@ const work = (props) => {
             img="/images/portfolio/teetopup.png"
             title="TeeTopUp"
             description="FrontEnd"
-            tags="HTML CSS JAVASCRIPT BOOTSTRAP JQUERY GULP NPM COFFEESCRIPT SASS"
+            tags="HTML BOOTSTRAP COFFEESCRIPT SASS"
             link=""
             linkCode=""
           />

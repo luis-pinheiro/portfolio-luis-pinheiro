@@ -31,7 +31,7 @@ const Example = () => {
     return () => clearInterval(action);
   }, []);
 
-  return <h1>{result}</h1>;
+  return <h6>{result}</h6>;
 };
 
 const index = () => {
@@ -62,19 +62,18 @@ const index = () => {
           <div className="grid w-full h-full mx-auto place-items-center">
             <div className="mt-24 ">
               <h1
-                className={`flex text-6xl text-center transition-colors ${
+                className={`flex display-1  text-center transition-colors ${
                   playing ? 'animate__animated animate__rubberBand animate__infinite animate__delay-2s ' : ''
-                } text-nord3 dark:text-nord6 dark:text-shadow lg:text-9xl tangerine `}
+                } text-nord3 dark:text-nord6 dark:text-shadow  tangerine `}
               >
                 {t('common:greeting')}
               </h1>
-
-              <div
-                id="scramble"
-                className="text-xl font-semibold text-center dark:text-nord6 dark:text-shadow text-nord3 my-7 code"
-              >
-                <Example />
-              </div>
+            </div>
+            <div
+              id="scramble"
+              className="text-xl font-semibold text-center dark:text-nord6 dark:text-shadow text-nord3 my-7 code"
+            >
+              {/* <Example /> */}
             </div>
 
             <div className="p-5 border border-red-500">

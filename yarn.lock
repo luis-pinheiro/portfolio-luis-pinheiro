@@ -3797,6 +3797,11 @@ react-jinke-music-player@^4.21.2:
     react-draggable "^4.4.3"
     react-icons "^3.11.0"
 
+react-parallax-tilt@^1.4.81:
+  version "1.4.81"
+  resolved "https://registry.yarnpkg.com/react-parallax-tilt/-/react-parallax-tilt-1.4.81.tgz#fa7b92af6d6d4ee852e04b3e201db8bd2bc78389"
+  integrity sha512-sYD4O+54MWWgYJOsGA6PLNlwbolGRQQPxFes9AhYANJyiWjgC6tAoG6N5k7WP9mGtaXbb/3pyOMhaJHQOFKK6A==
+
 react-refresh@0.8.3:
   version "0.8.3"
   resolved "https://registry.npmjs.org/react-refresh/-/react-refresh-0.8.3.tgz"

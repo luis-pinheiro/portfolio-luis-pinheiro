@@ -1,6 +1,6 @@
 import Pt from './SpeechRecognitionPt';
 import Nl from './SpeechRecognitionNl';
-import En from './SpeechReacognitionEn';
+import En from './SpeechRecognitionEn';
 import { useRouter } from 'next/router';
 
 const SpeechNavigation = () => {

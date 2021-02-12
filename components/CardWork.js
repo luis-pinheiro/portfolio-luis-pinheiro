@@ -15,8 +15,12 @@ const CardWork2 = ({ img, title, description, tags, link, linkCode }) => {
       {/* <div className="place-self-center"> */}
 
       <div
-        className="pb-4 overflow-hidden text-center border-transparent rounded-lg card-work bg-nord6 dark:bg-nord1 elevation-2 hover:elevation-4"
-        style={{ width: '300px', height: '400px' }}
+        className="pb-4 overflow-hidden text-center border-transparent rounded-lg opacity-90 card-work bg-nord6 dark:bg-nord1 elevation-2 hover:elevation-4"
+        style={{
+          width: '300px',
+          height: '400px',
+          backgroundImage: 'url("/public/patterns/watercolor-paper-texture.jpg")',
+        }}
       >
         {/* <div className="h-full"> */}
         {/* <div className="grid px-5 pt-5 pb-2 "> */}
@@ -28,13 +32,13 @@ const CardWork2 = ({ img, title, description, tags, link, linkCode }) => {
       {/* </div> */}
 
       <div
-        className="flex flex-col justify-center pb-4 text-center inner-element"
-        style={{ width: '264px', marginTop: '-377px', height: '353px' }}
+        className="flex flex-col justify-center pb-4 text-center card-layer inner-element"
+        style={{ width: '264px', marginTop: '-377px', height: '353px', marginLeft: '-1px' }}
       >
         <img className="object-cover object-center rounded-t-lg img-card" src={img} alt={title} width="300px" />
         <h1 className="mb-3 text-xl font-medium text-nord0 dark:text-nord6 dark:text-shadow title-font ">{title}</h1>
         <p className="mb-3 leading-relaxed text-nord1 dark:text-nord5 dark:text-shadow ">{description}</p>
-        <div className="flex flex-wrap justify-center text-center">
+        <div className="flex flex-wrap justify-center text-center ">
           {tags.split(' ').map((tag) => {
             return (
               <span

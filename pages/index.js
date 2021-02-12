@@ -7,38 +7,16 @@ import SocialLinks from './../components/SocialLinks';
 import '@fortawesome/fontawesome-free/css/all.css';
 import AllPagesLayout from './../layouts/allPagesLayout';
 import useTranslation from 'next-translate/useTranslation';
-import { useDencrypt } from 'use-dencrypt-effect';
-// import './../textScrambler';
-
-// if (typeof window !== 'undefined') {
-//   require('../textScrambler');
-// }
-
-const values = ['I Design', 'I Create', 'I Optimize', "I'm a Self-Taught Techie", "That's The Difference"];
-
-const Example = () => {
-  const { result, dencrypt } = useDencrypt();
-
-  React.useEffect(() => {
-    let i = 0;
-
-    const action = setInterval(() => {
-      dencrypt(values[i]);
-
-      i = i === values.length - 1 ? 0 : i + 1;
-    }, 5000);
-
-    return () => clearInterval(action);
-  }, []);
-
-  return <h6>{result}</h6>;
-};
 
 const index = () => {
   const isPlaying = useContext(PlayContext);
   let playing = isPlaying.isPlaying;
 
   let { t } = useTranslation();
+
+  useEffect(() => {
+    require('../textScrambler');
+  });
 
   return (
     <div className="place-self-center">
@@ -56,13 +34,12 @@ const index = () => {
           } z-50 border-8 rounded-full border-opacity-90 profile-img border-nord4 dark:border-nord0 `}
         />
       </div>
-      {/* <CardFolio vh="70vh" classes="place-self-center container"> */}
       <CardFolio classes="">
         <div className="flex flex-col w-full h-full justify-evenly">
           <div className="grid w-full h-full mx-auto place-items-center">
             <div className="mt-24 ">
               <h1
-                className={`flex display-1  text-center transition-colors ${
+                className={`flex text-7xl sm:text-8xl text-center transition-colors ${
                   playing ? 'animate__animated animate__rubberBand animate__infinite animate__delay-2s ' : ''
                 } text-nord3 dark:text-nord6 dark:text-shadow  tangerine `}
               >
@@ -71,14 +48,9 @@ const index = () => {
             </div>
             <div
               id="scramble"
-              className="text-xl font-semibold text-center dark:text-nord6 dark:text-shadow text-nord3 my-7 code"
-            >
-              {/* <Example /> */}
-            </div>
+              className="text-base font-semibold text-center dark:text-nord6 dark:text-shadow text-nord3 my-7 code"
+            ></div>
 
-            <div className="p-5 border border-red-500">
-              <p className="text-center text-red-500 capitalize">{t('common:siteStatus')}</p>
-            </div>
             <div className="flex flex-row flex-wrap content-around justify-center w-full px-5 text-2xl">
               <IconLink
                 delay="animate__delay-4s"
@@ -87,12 +59,7 @@ const index = () => {
                 title={t('common:pages.about')}
               ></IconLink>
               <IconLink delay="animate__delay-1s" to="/work" icon="fas fa-briefcase" title={t('common:pages.work')} />
-              <IconLink
-                delay="animate__delay-5s"
-                to="/services"
-                icon="fab fa-whmcs"
-                title={t('common:pages.services')}
-              />
+
               <IconLink
                 delay="animate__delay-3s"
                 to="/contact"

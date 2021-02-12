@@ -9,6 +9,10 @@ module.exports = {
         drop: '0 2px 8px 0 rgba(0,0,0,0.14)',
         white: '0px 1px 7px 0px rgba(255,255,255,255.75)',
       },
+      backgroundImage: {
+        patternLight: "url('/patterns/double-bubble-outline.png')",
+        patternDark: "url('/patterns/double-bubble-dark.png')",
+      },
 
       backgroundImage: (theme) => ({
         profitcreations: "url('/images/bg/header-2_4x.jpg ')",
@@ -229,6 +233,7 @@ module.exports = {
     }),
     require('tailwind-nord'),
     require('./responsive-typography')(['responsive']),
+    require('tailwindcss-hero-patterns'),
   ],
   future: {
     purgeLayersByDefault: true,

@@ -8,5 +8,12 @@
   },
   "siteStatus": "aan het bouwen",
   "goBackButton": "Terug",
-  "404": "404 - Pagina niet gevonden"
+  "404": "404 - Pagina niet gevonden",
+  "dencrypt": {
+    "1": "Ik ontwerp",
+    "2": "Ik maak",
+    "3": "Ik optimaliseer",
+    "4": "Ik ben een techneut die zichzelf geleerd heeft",
+    "5": "Dat is het verschil"
+  }
 }

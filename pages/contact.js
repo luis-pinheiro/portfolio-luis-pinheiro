@@ -4,7 +4,6 @@ import CardHeader from './../components/CardHeader';
 import '@fortawesome/fontawesome-free';
 import ContactSocialLinksGroup from './../components/ContactSocialLinksGroup';
 import AllPagesLayout from './../layouts/allPagesLayout';
-// import ContactForm from './../components/ContactForm';
 import useTranslation from 'next-translate/useTranslation';
 import ContactFormVercel from '../components/ContactFormVercel';
 

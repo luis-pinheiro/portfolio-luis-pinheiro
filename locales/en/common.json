@@ -8,5 +8,12 @@
   },
   "siteStatus": "under construction",
   "goBackButton": "Go Back",
-  "404": "404 - Page Not Found"
+  "404": "404 - Page Not Found",
+  "dencrypt": {
+    "1": "I Design",
+    "2": "I Create",
+    "3": "I Optimize",
+    "4": "I'm a Self-Taught Techie",
+    "5": "That's The Difference"
+  }
 }

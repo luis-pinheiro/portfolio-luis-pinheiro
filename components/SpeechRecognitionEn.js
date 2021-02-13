@@ -7,7 +7,6 @@ import '@fortawesome/fontawesome-free/css/all.css';
 const SpeechNavigation = () => {
   let locale = useRouter().locale;
 
-  console.log('listening en');
 
   const commands = [
     {

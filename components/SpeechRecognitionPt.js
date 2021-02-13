@@ -7,8 +7,6 @@ import '@fortawesome/fontawesome-free/css/all.css';
 const SpeechNavigation = () => {
   let locale = useRouter().locale;
 
-  console.log('listening pt');
-
   const commands = [
     {
       command: ['Abre *', 'Vai para *'],

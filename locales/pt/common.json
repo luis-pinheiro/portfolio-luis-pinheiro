@@ -8,5 +8,12 @@
   },
   "siteStatus": "em construção",
   "goBackButton": "Voltar",
-  "404": "404 - Página não encontrada"
+  "404": "404 - Página não encontrada",
+  "dencrypt": {
+    "1": "Eu desenho",
+    "2": "Eu crio",
+    "3": "Eu Otimizo",
+    "4": "Sou um técnico autodidata",
+    "5": "Essa é a diferença"
+  }
 }

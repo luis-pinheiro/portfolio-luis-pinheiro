@@ -7,6 +7,7 @@ import SocialLinks from './../components/SocialLinks';
 import '@fortawesome/fontawesome-free/css/all.css';
 import AllPagesLayout from './../layouts/allPagesLayout';
 import useTranslation from 'next-translate/useTranslation';
+import Dencrypt from './../components/Dencrypt';
 
 const index = () => {
   const isPlaying = useContext(PlayContext);
@@ -14,9 +15,17 @@ const index = () => {
 
   let { t } = useTranslation();
 
-  useEffect(() => {
-    require('../textScrambler');
-  });
+  const values = [
+    t('common:dencrypt.1'),
+    t('common:dencrypt.2'),
+    t('common:dencrypt.3'),
+    t('common:dencrypt.4'),
+    t('common:dencrypt.5'),
+  ];
+
+  // useEffect(() => {
+  //   require('../textScrambler');
+  // });
 
   return (
     <div className="place-self-center">
@@ -46,10 +55,8 @@ const index = () => {
                 {t('common:greeting')}
               </h1>
             </div>
-            <div
-              id="scramble"
-              className="text-base font-semibold text-center dark:text-nord6 dark:text-shadow text-nord3 my-7 code"
-            ></div>
+
+            <Dencrypt values={values} />
 
             <div className="flex flex-row flex-wrap content-around justify-center w-full px-5 text-2xl">
               <IconLink

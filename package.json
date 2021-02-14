@@ -29,6 +29,7 @@
     "react-parallax-tilt": "^1.4.81",
     "react-router-dom": "^5.2.0",
     "react-speech-recognition": "^3.6.0",
+    "react-typed": "^1.2.0",
     "regenerator-runtime": "^0.13.7",
     "tailwind-nord": "^1.2.0",
     "tailwindcss": "^2.0.2",

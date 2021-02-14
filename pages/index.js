@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from 'react';
+import React, { useContext } from 'react';
 import Head from 'next/head';
 import { PlayContext } from './_app';
 import CardFolio from './../components/CardFolio';
@@ -23,10 +23,6 @@ const index = () => {
     t('common:dencrypt.5'),
   ];
 
-  // useEffect(() => {
-  //   require('../textScrambler');
-  // });
-
   return (
     <div className="place-self-center">
       <Head>
@@ -48,7 +44,7 @@ const index = () => {
           <div className="grid w-full h-full mx-auto place-items-center">
             <div className="mt-24 ">
               <h1
-                className={`flex text-7xl sm:text-8xl text-center transition-colors ${
+                className={`flex text-7xl sm:text-8xl text-center transition-colors  ${
                   playing ? 'animate__animated animate__rubberBand animate__infinite animate__delay-2s ' : ''
                 } text-nord3 dark:text-nord6 dark:text-shadow  tangerine `}
               >

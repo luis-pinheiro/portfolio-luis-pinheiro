@@ -18,7 +18,15 @@ const work = (props) => {
 
       <CardFolio classes="">
         <div className="container grid w-full h-full px-5 mx-auto mb-28 gap-7 lg:pt-20 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 auto-rows-auto">
-          {/* <div className="flex flex-row flex-wrap justify-center w-full h-full px-5 mx-auto mb-5 space-y-12 lg:pt-20"> */}
+          <CardWork
+            img="/images/portfolio/next-portfolio.png"
+            title="Next-Portfolio"
+            description="Website"
+            tags="ReactJs NextJs TailwindCss Nord"
+            link=""
+            linkCode="https://github.com/luis-pinheiro/portfolio-nextjs"
+          />
+
           <CardWork
             img="/images/portfolio/profitcreations.png"
             title={t('work:oldPortfolio.title')}
@@ -43,7 +51,7 @@ const work = (props) => {
             link=""
             linkCode="https://bitbucket.org/ProfitCreations/nccustoms-wp/src/master/"
           />
-          <CardWork
+          {/* <CardWork
             img="/images/portfolio/Trendytv.png"
             title="TrendyTV"
             description="Website"
@@ -66,7 +74,7 @@ const work = (props) => {
             tags="HTML BOOTSTRAP COFFEESCRIPT SASS"
             link=""
             linkCode=""
-          />
+          /> */}
         </div>
       </CardFolio>
     </div>

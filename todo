@@ -1,12 +1,10 @@
 Global:
-  - Add Readme
-  - Add animations
-
+  - Google Analistics
   AddTranslation:
   - check https://www.youtube.com/redirect?redir_token=QUFFLUhqa1pTMWk4OHluOXU1Rk80UHlvZHJFdW16UGpKUXxBQ3Jtc0trVTlSMUxEWWZsSDFfU2JMV0o3MVY2RWNWWWVtckRXUzk5eHVybVVEUFI0elZaYXFTMHpPNEI3TlNJTC0xZUN0RGhseFJUcTloNDVQZUhHRVlCYTdFdFROMVVJeVM0TWtIUWMzX1hlTE1qV0x0WmNFTQ%3D%3D&v=Rbi52ZYtVKM&q=https%3A%2F%2Fdevelopers.google.com%2Fsearch%2Fdocs%2Fadvanced%2Fcrawling%2Flocalized-versions%3Fvisit_id%3D637421907601920248-2806527001%26rd%3D1&event=video_description
   Pages:
     Work:
-      - Add this portfolio also
+      - Add this portfolio also @done
     About:
       - Add list of skills
       - Say more about my background

@@ -57,7 +57,7 @@ export default function ContactFormVercel(props) {
   };
   return (
     <>
-      <form onSubmit={handleOnSubmit} className="w-full mx-auto p-7">
+      <form onSubmit={handleOnSubmit} className="w-full mx-auto p-5">
         <div className="grid grid-cols-1 gap-6">
           <div className="block">
             <label htmlFor="email" className="capitalize text-nord6 dark:text-shadow">
@@ -84,7 +84,7 @@ export default function ContactFormVercel(props) {
               onChange={handleOnChange}
               required
               value={inputs.message}
-              className="block w-full mt-1 border-gray-200 rounded-md shadow-sm text-nord1 bg-nord6 focus:border-gray-400 focus:ring focus:ring-nord5 focus:ring-opacity-50"
+              className="block w-full mt-1 border-gray-200 rounded-md shadow-sm text-nord1 bg-nord6 focus:border-gray-400 focus:ring focus:ring-nord5 focus:ring-opacity-50 h-36"
             />
           </div>
           <button

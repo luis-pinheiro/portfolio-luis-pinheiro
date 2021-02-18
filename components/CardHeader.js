@@ -5,8 +5,8 @@ import useTranslation from 'next-translate/useTranslation';
 const CardHeader = ({ icon, title }) => {
   let { t } = useTranslation();
   return (
-    <header className="fixed top-0 left-0 z-50 w-full bg-nord10 dark:bg-nord2 elevation-5 ">
-      <div className="container flex items-center flex-1 p-2 mx-auto mt-0 lg:p-5 ">
+    <header className="fixed top-0 left-0 w-full z-60 bg-nord10 dark:bg-nord2 elevation-5 ">
+      <div className="container flex items-center flex-1 p-2 mx-auto mt-0 ">
         <div className="inline-flex justify-start ml-0">
           <Link href="/">
             <button

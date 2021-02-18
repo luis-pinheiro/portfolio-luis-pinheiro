@@ -1,4 +1,12 @@
 {
   "title": "sobre",
-  "description": "Sou um português entusiasta e autodidata desenvolvedor Full Stack em evolução no ecossistema JavaScript. Gosto de aprender coisas novas sobre tecnologias web."
+  "description": "Sou um português entusiasta e autodidata Web Developer em evolução no ecossistema JavaScript.",
+  "tools": "ferramentas e estruturas que gosto de usar",
+  "languages": {
+    "languages": "idiomas",
+    "pt": "português",
+    "en": "inglês",
+    "nl": "holandês"
+  },
+  "certificates": "certificados"
 }

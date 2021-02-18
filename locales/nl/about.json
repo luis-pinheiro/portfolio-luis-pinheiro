@@ -1,4 +1,12 @@
 {
   "title": "over",
-  "description": "Ik ben een Portugese enthousiaste autodidactische Full Stack-ontwikkelaar die evolueert in het JavaScript-ecosysteem. Ik vind het leuk om nieuwe dingen te leren over webtechnologieën."
+  "description": "Ik ben een Portugese enthousiaste autodidactische webontwikkelaar die evolueert in het JavaScript-ecosysteem.",
+  "tools": "tools en frameworks die ik graag gebruik",
+  "languages": {
+    "languages": "talen",
+    "pt": "Portugees",
+    "en": "Engels",
+    "nl": "Nederlands"
+  },
+  "certificates": "certificaten"
 }

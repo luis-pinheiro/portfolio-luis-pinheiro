@@ -8,7 +8,7 @@
     "start": "next start",
     "tcv": "npx tailwind-config-viewer",
     "..": "yarn && yarn dev",
-    "build-css": "postcss styles/globals.css -o compiled.css"
+    "build-css": "npx tailwindcss-cli@latest build -o tailwind.css"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.2",

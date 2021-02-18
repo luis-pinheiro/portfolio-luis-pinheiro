@@ -45,16 +45,6 @@ function MyApp({ Component, pageProps }) {
           </PlayContext.Provider>
         </div>
       </Layout>
-
-      {/* <div className="flex justify-center align-middle">
-        <ReactAudioPlayer
-          src="/audio/ignition.mp3"
-          controls
-          className="fixed bottom-0 rounded "
-          onPlay={toggleIsPlaying}
-          onPause={toggleIsPlaying}
-        />
-      </div> */}
     </div>
   );
 }

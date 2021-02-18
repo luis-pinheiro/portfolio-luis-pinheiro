@@ -16,18 +16,17 @@ const about = (props) => {
         <link rel="icon" href="./favicon_io/favicon.ico" />
       </Head>
       <CardHeader icon="fas fa-user-circle" title={t('common:pages.about')} />
+      <div className="grid mx-auto mt-20 -mb-20 place-items-center">
+        <img
+          src="/images/profile.jpg"
+          alt="Picture of the author"
+          className="z-50 border-8 rounded-full border-opacity-90 profile-img border-nord4 dark:border-nord0"
+        />
+      </div>
       <CardFolio classes="">
         <div className="flex flex-col justify-around w-full h-full place-items-center">
-          <div className="flex flex-col w-full mt-20 ">
+          <div className="flex flex-col w-full ">
             <div className=" place-items-center">
-              <div className="grid mx-auto place-items-center ">
-                <img
-                  src="/images/profile.jpg"
-                  alt="Picture of the author"
-                  className="rounded-full shadow-xl profile-img"
-                />
-              </div>
-
               <h1 className="text-6xl text-center text-nord3 dark:text-nord6 dark:text-shadow lg:text-9xl my-7 tangerine">
                 Luis Pinheiro
               </h1>
@@ -38,6 +37,38 @@ const about = (props) => {
               </h4>
             </div>
           </div>
+
+          <div className="flex flex-col pt-2 mt-10 space-y-2">
+            <div className="py-5 text-xl text-center dark:text-nord6 dark:text-shadow text-nord3 px-7 lg:px-10">
+              <h4 className="font-semibold capitalize ">{t('about:languages.languages')}</h4>
+              <ul className="flex flex-row justify-center mt-4 space-x-5 text-lg">
+                <li>{t('about:languages.pt')}</li>
+                <li>{t('about:languages.en')}</li>
+                <li>{t('about:languages.nl')}</li>
+              </ul>
+            </div>
+            <div className="py-5 text-xl text-center dark:text-nord6 dark:text-shadow text-nord3 px-7 lg:px-10">
+              <h4 className="font-semibold capitalize">{t('about:tools')}</h4>
+              <ul className="flex flex-wrap justify-center mt-4 space-x-5 text-lg align-middle">
+                <li>Electron</li>
+                <li>React</li>
+                <li>NextJs</li>
+                <li>TailwindCss</li>
+                <li>Bootstrap</li>
+                <li>Visual Studio Code</li>
+                <li>Gulp</li>
+                <li>Photoshop</li>
+                <li>Sass</li>
+                <li>MaterializeCss</li>
+                <li>jQuery</li>
+                <li>npm</li>
+              </ul>
+            </div>
+          </div>
+          {/* <div className="text-2xl text-center dark:text-nord6 dark:text-shadow text-nord3 px-7 lg:px-10">
+            <h4>{t('about:certificates')}</h4>
+          </div> */}
+
           <div id="social-links " className="w-full pb-5 mt-10 sm:max-w-md">
             <ul className="flex flex-wrap justify-around place-content-center">
               <li>

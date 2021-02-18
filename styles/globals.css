@@ -1,8 +1,8 @@
 @import 'animate.css/animate.css';
 
-body {
+/* body {
   @apply debug-screens;
-}
+} */
 
 /* Responsive Typography */
 @media (min-width: 1200px) {
@@ -91,6 +91,7 @@ input:checked ~ .toggle__dot {
 }
 
 /* Card */
+header,
 #speech > div,
 #card-folio {
   backdrop-filter: blur(7px);

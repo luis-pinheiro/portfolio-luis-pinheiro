@@ -1,4 +1,12 @@
 {
   "title": "about",
-  "description": "I'm a Portuguese enthusiast self-taught Fullstack-developer evolving in the JavaScript ecosystem.  I like to learn new stuffs concerning Web technologies."
+  "description": "I'm a Portuguese enthusiast self-taught Web Developer evolving in the JavaScript ecosystem.",
+  "tools": "tools and frameworks i like to use",
+  "languages": {
+    "languages": "languages",
+    "pt": "Portuguese",
+    "en": "English",
+    "nl": "Dutch"
+  },
+  "certificates": "certificates"
 }

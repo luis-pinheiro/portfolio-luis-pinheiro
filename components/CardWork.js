@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 const CardWork2 = ({ img, title, description, tags, link, linkCode }) => {
   let website = true;
   if (link === '') {
@@ -21,7 +23,8 @@ const CardWork2 = ({ img, title, description, tags, link, linkCode }) => {
         className="flex flex-col justify-center pb-4 text-center card-layer inner-element"
         style={{ width: '265px', marginTop: '-377px', height: '353px', marginLeft: '-1px' }}
       > */}
-        <img className="object-cover object-center rounded-t-lg img-card" src={img} alt={title} width="300px" />
+        <Image className="object-cover object-center rounded-t-lg img-card" src={img} alt={title} width={300}
+        height={168.23} />
         <div className="flex flex-col my-auto">
           <h1 className="mb-3 text-xl font-medium text-nord0 dark:text-nord6 dark:text-shadow title-font ">{title}</h1>
           <p className="mb-3 leading-relaxed text-nord1 dark:text-nord5 dark:text-shadow ">{description}</p>

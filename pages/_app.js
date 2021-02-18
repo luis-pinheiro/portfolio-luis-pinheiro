@@ -20,8 +20,6 @@ function MyApp({ Component, pageProps }) {
     setIsplaying((isPlaying) => !isPlaying);
   };
 
-  // ./Play
-
   return (
     <div
       className={`relative flex flex-col justify-center min-h-screen align-middle bg-center bg-no-repeat bg-cover
@@ -31,11 +29,10 @@ function MyApp({ Component, pageProps }) {
 
       <Head>
         <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald" />
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald&display=swap" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine&display=swap" />
 
         <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&display=swap" rel="stylesheet" />
-        {/* <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" /> */}
       </Head>
       <Layout>
         <div>

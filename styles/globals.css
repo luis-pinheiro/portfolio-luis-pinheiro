@@ -85,10 +85,10 @@ input:checked ~ .toggle__dot {
   line-height: 0.2rem;
 }
 
-.profile-img {
+/* .profile-img {
   width: 150px;
   height: 150px;
-}
+} */
 
 /* Card */
 header,

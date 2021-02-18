@@ -8,6 +8,7 @@ import '@fortawesome/fontawesome-free/css/all.css';
 import AllPagesLayout from './../layouts/allPagesLayout';
 import useTranslation from 'next-translate/useTranslation';
 import Dencrypt from './../components/Dencrypt';
+import Image from 'next/image'
 
 const index = () => {
   const isPlaying = useContext(PlayContext);
@@ -31,12 +32,14 @@ const index = () => {
       </Head>
 
       <div className="grid mx-auto -mb-20 place-items-center">
-        <img
+        <Image
           src="/images/profile1.png"
           alt="Picture of the author"
           className={`${
             playing ? 'animate__animated animate__headShake animate__infinite ' : ''
           } z-50 border-8 rounded-full border-opacity-90 profile-img border-nord4 dark:border-nord0 `}
+          width={150}
+        height={150}
         />
       </div>
       <CardFolio classes="">

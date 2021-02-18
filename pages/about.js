@@ -5,6 +5,7 @@ import SocialLinks from '../components/SocialLinks';
 import Head from 'next/head';
 import useTranslation from 'next-translate/useTranslation';
 import AllPagesLayout from '../layouts/allPagesLayout';
+import Image from 'next/image';
 
 const about = (props) => {
   let { t } = useTranslation('about');
@@ -17,10 +18,12 @@ const about = (props) => {
       </Head>
       <CardHeader icon="fas fa-user-circle" title={t('common:pages.about')} />
       <div className="grid mx-auto mt-20 -mb-20 place-items-center">
-        <img
+        <Image
           src="/images/profile.jpg"
           alt="Picture of the author"
           className="z-50 border-8 rounded-full border-opacity-90 profile-img border-nord4 dark:border-nord0"
+           width={150}
+        height={150}
         />
       </div>
       <CardFolio classes="">

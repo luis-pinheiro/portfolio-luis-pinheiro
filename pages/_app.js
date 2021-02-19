@@ -28,11 +28,11 @@ function MyApp({ Component, pageProps }) {
       <Switch isToggled={isToggled} onToggle={() => setIsToggled(!isToggled)} />
 
       <Head>
-        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        {/* <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald&display=swap" />
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine&display=swap" />
 
-        <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&display=swap" rel="stylesheet" /> */}
       </Head>
       <Layout>
         <div>

@@ -7,7 +7,6 @@ import '@fortawesome/fontawesome-free/css/all.css';
 const SpeechNavigation = () => {
   let locale = useRouter().locale;
 
-
   const commands = [
     {
       command: ['Open *', 'Go to *'],
@@ -26,9 +25,9 @@ const SpeechNavigation = () => {
     contact: '/contact',
   };
 
-  if (!SpeechRecognition.browserSupportsSpeechRecognition()) {
-    return null;
-  }
+  // if (!SpeechRecognition.browserSupportsSpeechRecognition()) {
+  //   return null;
+  // }
 
   let message = '';
 
@@ -77,15 +76,19 @@ const SpeechNavigation = () => {
         onClick={() => {
           SpeechRecognition.startListening({ language: 'en-US' });
         }}
-        className={`fixed flex items-center justify-center w-10 h-10 p-4 border-2 rounded-full ${
+        className={`fixed flex items-center justify-center w-8 h-8  border-2 rounded-full ${
           !listening ? 'bg-nord3 dark:bg-nord4' : 'bg-nord11'
-        }   elevation-5 z-80  top-14 right-5 dark:text-nord3 border-nord4  text-nord4 dark:border-nord3`}
+        }   elevation-5 z-70   right-7 dark:text-nord3 border-nord4  text-nord4 dark:border-nord3`}
+        style={{ bottom: '344px' }}
       >
         <i className="fas fa-microphone"></i>
       </button>
 
       {listening && (
-        <span className="fixed flex w-10 h-10 rounded-full animate-ping z-70 top-14 right-5 bg-nord11"></span>
+        <span
+          className="fixed flex w-8 h-8 rounded-full animate-ping z-60 right-7 bg-nord11"
+          style={{ bottom: '344px' }}
+        ></span>
       )}
     </div>
   );

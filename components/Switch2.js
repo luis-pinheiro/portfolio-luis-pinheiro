@@ -2,7 +2,7 @@ import React from 'react';
 
 const Switch = ({ isToggled, onToggle }) => {
   return (
-    <div id="switch" className="fixed flex rounded-full z-70 w-11 h-7 top-28 right-4">
+    <div id="switch" className="fixed flex rounded-full z-70 right-7" style={{ bottom: '307px' }}>
       {/* Toggle Button */}
       <label htmlFor="toogleA" className="flex items-center justify-center rounded-full cursor-pointer">
         {/* toggle  */}
@@ -10,7 +10,7 @@ const Switch = ({ isToggled, onToggle }) => {
           {/* input */}
           <input id="toogleA" type="checkbox" className="hidden" checked={isToggled} onChange={onToggle} />
           {/* line */}
-          <div className="flex items-center justify-center w-10 h-10 text-lg border-2 rounded-full bg-nord3 border-nord6 dark:bg-nord6 dark:text-nord3 dark:border-nord3 elevation-5 z-70 text-nord4">
+          <div className="flex items-center justify-center w-8 h-8 text-xs border-2 rounded-full bg-nord3 border-nord6 dark:bg-nord6 dark:text-nord3 dark:border-nord3 elevation-5 z-70 text-nord4">
             {isToggled ? <i className="absolute fas fa-sun"></i> : <i className="absolute fas fa-moon"></i>}
           </div>
           {/* dot */}

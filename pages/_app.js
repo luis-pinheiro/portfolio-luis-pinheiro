@@ -4,8 +4,12 @@ import Head from 'next/head';
 import Switch from './../components/Switch2';
 import 'tailwindcss/tailwind.css';
 import '../styles/globals.css';
-import ReactAudioPlayer from 'react-audio-player';
-// import 'animate.css/animate.css';
+// import ReactAudioPlayer from 'react-audio-player';
+import SpeechNavigation from './../components/SpeechNavigation';
+import SwitchToEn from '../components/SwitchToEn';
+import SwitchToPt from '../components/SwitchToPt';
+import SwitchToNl from '../components/SwitchToNl';
+import FloatingButton from './../components/FloatingButton';
 import DynamicMusic from './../components/DynamicMusic';
 
 export const PlayContext = React.createContext();
@@ -13,8 +17,9 @@ export const PlayContext = React.createContext();
 function MyApp({ Component, pageProps }) {
   const [isToggled, setIsToggled] = useState(false);
   const [isPlaying, setIsplaying] = useState(false);
+  const [showNav, setShowNav] = useState(true);
 
-  const Layout = Component.Layout || EmptyLayout;
+  // const Layout = Component.Layout || EmptyLayout;
 
   const togglePlay = () => {
     setIsplaying((isPlaying) => !isPlaying);
@@ -27,25 +32,23 @@ function MyApp({ Component, pageProps }) {
     >
       <Switch isToggled={isToggled} onToggle={() => setIsToggled(!isToggled)} />
 
-      <Head>
-        {/* <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald&display=swap" />
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine&display=swap" />
-
-        <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&display=swap" rel="stylesheet" /> */}
-      </Head>
-      <Layout>
-        <div>
-          <PlayContext.Provider value={{ isPlaying, togglePlay }}>
-            <DynamicMusic />
-            <Component {...pageProps} />
-          </PlayContext.Provider>
-        </div>
-      </Layout>
+      {/* <Layout> */}
+      <div>
+        <PlayContext.Provider value={{ isPlaying, togglePlay }}>
+          <Component {...pageProps} />
+          <DynamicMusic />
+          <SwitchToPt />
+          <SwitchToNl />
+          <SwitchToEn />
+          <FloatingButton />
+          <SpeechNavigation />
+        </PlayContext.Provider>
+      </div>
+      {/* </Layout> */}
     </div>
   );
 }
 
-const EmptyLayout = ({ children }) => <>{children}</>;
+// const EmptyLayout = ({ children }) => <>{children}</>;
 
 export default MyApp;

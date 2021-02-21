@@ -25,9 +25,9 @@ const SpeechNavigation = () => {
     contact: '/contact',
   };
 
-  if (!SpeechRecognition.browserSupportsSpeechRecognition()) {
-    return null;
-  }
+  // if (!SpeechRecognition.browserSupportsSpeechRecognition()) {
+  //   return null;
+  // }
 
   let message = '';
 
@@ -44,7 +44,7 @@ const SpeechNavigation = () => {
     <div id="speech" className="">
       {listening && (
         <div
-          className="fixed top-0 flex flex-col items-center justify-around w-screen h-screen bg-center bg-no-repeat bg-contain bg-rings bg-opacity-90 dark:bg-nord3 bg-nord4 z-60"
+          className="fixed top-0 flex flex-col items-center justify-around w-screen h-screen bg-center bg-no-repeat bg-contain  bg-opacity-90 dark:bg-nord3 bg-nord4 z-60"
           style={{ backgroundBlendMode: 'hue' }}
         >
           <div className="flex flex-col items-center justify-around w-screen h-screen bg-center bg-no-repeat ">
@@ -76,12 +76,20 @@ const SpeechNavigation = () => {
         onClick={() => {
           SpeechRecognition.startListening({ language: 'nl-NL' });
         }}
-        className={`fixed flex items-center justify-center w-10 h-10 p-4 border-2 rounded-full ${
+       className={`fixed flex items-center justify-center w-8 h-8  border-2 rounded-full ${
           !listening ? 'bg-nord3 dark:bg-nord4' : 'bg-nord11'
-        }   elevation-5 z-70  top-14 right-5 dark:text-nord3 border-nord4  text-nord4 dark:border-nord3`}
+        }   elevation-5 z-70   right-7 dark:text-nord3 border-nord4  text-nord4 dark:border-nord3`}
+        style={{ bottom: '344px' }}
       >
         <i className="fas fa-microphone"></i>
       </button>
+
+      {listening && (
+        <span
+          className="fixed flex w-8 h-8 rounded-full animate-ping z-60 right-7 bg-nord11"
+          style={{ bottom: '344px' }}
+        ></span>
+      )}
     </div>
   );
 };

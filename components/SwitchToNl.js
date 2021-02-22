@@ -7,7 +7,7 @@ export default function SwitchToNl() {
   let router = useRouter();
   const variants = {
     initial: {
-      y: 150,
+      y: 100,
       opacity: 0,
     },
     animate: {

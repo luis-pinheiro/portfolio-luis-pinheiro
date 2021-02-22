@@ -7,7 +7,7 @@ export default function SwitchToPt() {
   let router = useRouter();
   const variants = {
     initial: {
-      y: 200,
+      y: 150,
       opacity: 0,
     },
     animate: {

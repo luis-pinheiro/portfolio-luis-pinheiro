@@ -7,7 +7,7 @@ export default function SwitchToEn() {
   let router = useRouter();
   const variants = {
     initial: {
-      y: 100,
+      y: 50,
       opacity: 0,
     },
     animate: {

@@ -10,7 +10,6 @@ import Image from 'next/image';
 const about = (props) => {
   let { t } = useTranslation('about');
   return (
-    // <CardFolio classes="w-screen h-screen">
     <div>
       <Head>
         <title>Luis Pinheiro | Portfolio</title>
@@ -68,9 +67,6 @@ const about = (props) => {
               </ul>
             </div>
           </div>
-          {/* <div className="text-2xl text-center dark:text-nord6 dark:text-shadow text-nord3 px-7 lg:px-10">
-            <h4>{t('about:certificates')}</h4>
-          </div> */}
 
           <div id="social-links " className="w-full pb-5 mt-10 sm:max-w-md">
             <ul className="flex flex-wrap justify-around place-content-center">

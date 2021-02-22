@@ -10,10 +10,4 @@ Global:
       - Say more about my background
       - Add certifications
 
-    Use:
-      - https://www.youtube.com/watch?v=zIDpZi-36Qs
-      -
-  Components:
-    - Uncomment SpeechBrowser support
-
 https://play.tailwindcss.com/2ZqJWOKFZ6?size=808x915

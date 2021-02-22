@@ -1,4 +1,3 @@
-import React, { useContext } from 'react';
 import Head from 'next/head';
 import { PlayContext } from './_app';
 import CardFolio from './../components/CardFolio';
@@ -12,9 +11,6 @@ import Image from 'next/image';
 import { motion } from 'framer-motion';
 
 const index = () => {
-  const isPlaying = useContext(PlayContext);
-  let playing = isPlaying.isPlaying;
-
   let { t } = useTranslation();
 
   const values = [
@@ -46,19 +42,11 @@ const index = () => {
         variants={imgVariants}
         initial="initial"
         animate="animate"
-        // transition={{
-        //   delay: 0.5,
-        //   type: 'tween',
-
-        //   duration: 2,
-        // }}
       >
         <Image
           src="/images/profile1.png"
           alt="Picture of the author"
-          className={`${
-            playing ? 'animate__animated animate__headShake animate__infinite ' : ''
-          } z-50 border-8 rounded-full border-opacity-90 profile-img border-nord4 dark:border-nord0 `}
+          className="z-50 border-8 rounded-full border-opacity-90 profile-img border-nord4 dark:border-nord0"
           width={150}
           height={150}
         />
@@ -67,11 +55,7 @@ const index = () => {
         <div className="flex flex-col w-full h-full justify-evenly">
           <div className="grid w-full h-full mx-auto place-items-center">
             <div className="mt-24 ">
-              <h1
-                className={`flex text-7xl sm:text-8xl text-center transition-colors  ${
-                  playing ? 'animate__animated animate__rubberBand animate__infinite animate__delay-2s ' : ''
-                } text-nord3 dark:text-nord6 dark:text-shadow  tangerine `}
-              >
+              <h1 className="text-nord3 text-7xl md:text-8xl xl:text-9xl dark:text-nord6 dark:text-shadow tangerine">
                 {t('common:greeting')}
               </h1>
             </div>

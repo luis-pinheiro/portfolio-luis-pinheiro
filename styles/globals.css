@@ -1,6 +1,5 @@
-@import 'animate.css/animate.css';
-
-/* body {
+/*
+body {
   @apply debug-screens;
 } */
 
@@ -19,11 +18,6 @@
 
 .bg-profitcreations {
   background-attachment: fixed !important;
-}
-
-/* Animate.css */
-.heart-beat {
-  @apply animate__animated animate__heartBeat animate__infinite !important;
 }
 
 /* Toggle Button */

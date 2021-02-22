@@ -1,13 +1,8 @@
-import React, { useContext } from 'react';
 import Link from 'next/link';
-import { PlayContext } from './../pages/_app';
 import 'animate.css/animate.css';
 import { motion } from 'framer-motion';
 
 const iconLink = ({ to, icon, title, delay }) => {
-  const isPlaying = useContext(PlayContext);
-  let playing = isPlaying.isPlaying;
-
   const variants = {
     initial: {
       scale: 0,
@@ -24,9 +19,7 @@ const iconLink = ({ to, icon, title, delay }) => {
 
   return (
     <motion.div
-      className={` ${
-        playing ? 'animate__animated animate__heartBeat animate__infinite ' + delay : ''
-      } flex-1 p-0 m-2 text-center align-middle rounded-2xl  text-nord3 dark:text-nord6 dark:hover:text-nord-5 dark:text-shadow hover:text-nord1`}
+      className="flex-1 p-0 m-2 text-center align-middle rounded-2xl text-nord3 dark:text-nord6 dark:hover:text-nord-5 dark:text-shadow hover:text-nord1"
       variants={variants}
       initial="initial"
       animate="animate"

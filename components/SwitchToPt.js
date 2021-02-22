@@ -26,7 +26,7 @@ export default function SwitchToPt() {
       <Link href={router.asPath} locale="pt">
         <motion.a
           className="fixed block right-7 z-70"
-          style={{ bottom: '232px' }}
+          style={{ bottom: '190px' }}
           variants={variants}
           initial="initial"
           animate="animate"

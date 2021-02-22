@@ -26,7 +26,7 @@ export default function SwitchToNl() {
       <Link href={router.asPath} locale="nl">
         <motion.a
           className="fixed block right-7 z-70 "
-          style={{ bottom: '190px' }}
+          style={{ bottom: '148px' }}
           variants={variants}
           initial="initial"
           animate="animate"

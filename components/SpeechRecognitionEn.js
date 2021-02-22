@@ -107,7 +107,7 @@ const SpeechNavigation = ({ setShowNav }) => {
           className={`fixed flex items-center justify-center w-8 h-8  border-2 rounded-full ${
             !listening ? 'bg-nord3 dark:bg-nord4' : 'bg-nord11'
           }   elevation-5 z-70   right-7 dark:text-nord3 border-nord4  text-nord4 dark:border-nord3`}
-          style={{ bottom: '316px' }}
+          style={{ bottom: '274px' }}
           variants={variants}
           initial="initial"
           animate="animate"

@@ -7,7 +7,7 @@ import SwitchToEn from '../components/SwitchToEn';
 import SwitchToPt from '../components/SwitchToPt';
 import SwitchToNl from '../components/SwitchToNl';
 import FloatingButton from './../components/FloatingButton';
-import DynamicMusic from './../components/DynamicMusic';
+// import DynamicMusic from './../components/DynamicMusic';
 import { motion, AnimatePresence } from 'framer-motion';
 
 export const PlayContext = React.createContext();
@@ -49,7 +49,7 @@ function MyApp({ Component, pageProps }) {
               <SwitchToNl setShowNav={setShowNav} />
               <SwitchToEn setShowNav={setShowNav} />
               <SpeechNavigation setShowNav={setShowNav} />
-              <DynamicMusic showNav={showNav} setShowNav={setShowNav} />
+              {/* <DynamicMusic showNav={showNav} setShowNav={setShowNav} /> */}
             </div>
           )}
 

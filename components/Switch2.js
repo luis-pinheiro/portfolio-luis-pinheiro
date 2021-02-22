@@ -26,7 +26,7 @@ const Switch = ({ isToggled, onToggle }) => {
     <motion.div
       id="switch"
       className="fixed flex rounded-full z-70 right-7"
-      style={{ bottom: '274px' }}
+      style={{ bottom: '232px' }}
       variants={variants}
       initial="initial"
       animate="animate"

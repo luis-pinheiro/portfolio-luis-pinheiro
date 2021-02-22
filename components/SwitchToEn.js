@@ -26,7 +26,7 @@ export default function SwitchToEn() {
       <Link href={router.asPath} locale="en">
         <motion.a
           className="fixed block right-7 z-70 "
-          style={{ bottom: '148px' }}
+          style={{ bottom: '105px' }}
           variants={variants}
           initial="initial"
           animate="animate"

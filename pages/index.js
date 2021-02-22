@@ -8,7 +8,8 @@ import '@fortawesome/fontawesome-free/css/all.css';
 import AllPagesLayout from './../layouts/allPagesLayout';
 import useTranslation from 'next-translate/useTranslation';
 import Dencrypt from './../components/Dencrypt';
-import Image from 'next/image'
+import Image from 'next/image';
+import { motion } from 'framer-motion';
 
 const index = () => {
   const isPlaying = useContext(PlayContext);
@@ -24,6 +25,15 @@ const index = () => {
     t('common:dencrypt.5'),
   ];
 
+  const imgVariants = {
+    initial: {
+      opacity: 0,
+    },
+    animate: {
+      opacity: 1,
+    },
+  };
+
   return (
     <div className="place-self-center">
       <Head>
@@ -31,7 +41,18 @@ const index = () => {
         <link rel="icon" href="./favicon_io/favicon.ico" />
       </Head>
 
-      <div className="grid mx-auto -mb-20 place-items-center">
+      <motion.div
+        className="grid mx-auto -mb-20 place-items-center"
+        variants={imgVariants}
+        initial="initial"
+        animate="animate"
+        // transition={{
+        //   delay: 0.5,
+        //   type: 'tween',
+
+        //   duration: 2,
+        // }}
+      >
         <Image
           src="/images/profile1.png"
           alt="Picture of the author"
@@ -39,9 +60,9 @@ const index = () => {
             playing ? 'animate__animated animate__headShake animate__infinite ' : ''
           } z-50 border-8 rounded-full border-opacity-90 profile-img border-nord4 dark:border-nord0 `}
           width={150}
-        height={150}
+          height={150}
         />
-      </div>
+      </motion.div>
       <CardFolio classes="">
         <div className="flex flex-col w-full h-full justify-evenly">
           <div className="grid w-full h-full mx-auto place-items-center">
@@ -76,10 +97,10 @@ const index = () => {
             <div id="social-links " className="w-full mt-10 sm:max-w-md">
               <ul className="flex flex-wrap justify-around place-content-center">
                 <li>
-                  <SocialLinks className="" icon="fab fa-linkedin" url="https://www.linkedin.com/in/luis-pinheiro" />
+                  <SocialLinks icon="fab fa-linkedin" url="https://www.linkedin.com/in/luis-pinheiro" />
                 </li>
                 <li>
-                  <SocialLinks className="" icon="fab fa-dev" url="https://dev.to/luispinheiro" />
+                  <SocialLinks icon="fab fa-dev" url="https://dev.to/luispinheiro" />
                 </li>
                 <li>
                   <SocialLinks
@@ -90,7 +111,7 @@ const index = () => {
                 </li>
 
                 <li>
-                  <SocialLinks className="" icon="fab fa-github" url="https://github.com/luis-pinheiro" />
+                  <SocialLinks icon="fab fa-github" url="https://github.com/luis-pinheiro" />
                 </li>
               </ul>
             </div>

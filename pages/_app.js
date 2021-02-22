@@ -36,40 +36,28 @@ function MyApp({ Component, pageProps }) {
       className={`relative flex flex-col justify-center min-h-screen align-middle bg-center bg-no-repeat bg-cover
        ${isToggled ? 'dark' : ''} bg-profitcreations effect7`}
     >
-      {/* <Layout> */}
       <div>
         <PlayContext.Provider value={{ isPlaying, togglePlay }}>
-          <Component {...pageProps} />
+          <AnimatePresence>
+            <Component {...pageProps} />
+          </AnimatePresence>
           {showNav && (
-            // <AnimatePresence>
-            //   <motion.div
-            //     inital={{ opacity: 0, y: 200 }}
-            //     animate={{ opacity: 1, y: 0 }}
-            //     transition={{
-            //       staggerChildren: 0.4,
-            //     }}
-            //     exit={{ opacity: 0, y: -200 }}
-            //   >
             <div>
-              <Switch isToggled={isToggled} onToggle={() => setIsToggled(!isToggled)} />
-              <DynamicMusic />
-              <SwitchToPt />
-              <SwitchToNl />
-              <SwitchToEn />
-              <SpeechNavigation />
+              <Switch isToggled={isToggled} onToggle={() => setIsToggled(!isToggled)} setShowNav={setShowNav} />
+
+              <SwitchToPt setShowNav={setShowNav} />
+              <SwitchToNl setShowNav={setShowNav} />
+              <SwitchToEn setShowNav={setShowNav} />
+              <SpeechNavigation setShowNav={setShowNav} />
+              <DynamicMusic showNav={showNav} setShowNav={setShowNav} />
             </div>
-            //   </motion.div>
-            // </AnimatePresence>
           )}
 
           <FloatingButton showNav={showNav} setShowNav={setShowNav} />
         </PlayContext.Provider>
       </div>
-      {/* </Layout> */}
     </div>
   );
 }
-
-// const EmptyLayout = ({ children }) => <>{children}</>;
 
 export default MyApp;

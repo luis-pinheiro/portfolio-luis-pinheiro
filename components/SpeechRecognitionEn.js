@@ -5,7 +5,7 @@ import Router, { useRouter } from 'next/router';
 import '@fortawesome/fontawesome-free/css/all.css';
 import { motion, AnimatePresence } from 'framer-motion';
 
-const SpeechNavigation = () => {
+const SpeechNavigation = ({ setShowNav }) => {
   let locale = useRouter().locale;
 
   const commands = [

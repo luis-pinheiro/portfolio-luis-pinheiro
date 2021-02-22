@@ -22,8 +22,8 @@ const about = (props) => {
           src="/images/profile.jpg"
           alt="Picture of the author"
           className="z-50 border-8 rounded-full border-opacity-90 profile-img border-nord4 dark:border-nord0"
-           width={150}
-        height={150}
+          width={150}
+          height={150}
         />
       </div>
       <CardFolio classes="">
@@ -44,10 +44,10 @@ const about = (props) => {
           <div className="flex flex-col pt-2 mt-10 space-y-2">
             <div className="py-5 text-xl text-center dark:text-nord6 dark:text-shadow text-nord3 px-7 lg:px-10">
               <h4 className="font-semibold capitalize ">{t('about:languages.languages')}</h4>
-              <ul className="flex flex-row justify-center mt-4 space-x-5 text-lg">
-                <li>{t('about:languages.pt')}</li>
-                <li>{t('about:languages.en')}</li>
-                <li>{t('about:languages.nl')}</li>
+              <ul className="flex flex-row justify-center mt-4 space-x-5 text-lg capitalize">
+                <li className="capitalize">{t('about:languages.pt')}</li>
+                <li className="capitalize">{t('about:languages.en')}</li>
+                <li className="capitalize">{t('about:languages.nl')}</li>
               </ul>
             </div>
             <div className="py-5 text-xl text-center dark:text-nord6 dark:text-shadow text-nord3 px-7 lg:px-10">

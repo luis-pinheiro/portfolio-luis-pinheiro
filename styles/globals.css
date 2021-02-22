@@ -53,12 +53,6 @@ input:checked ~ .toggle__dot {
   font-size: 0.75rem;
   line-height: 0.2rem;
 }
-
-/* .profile-img {
-  width: 150px;
-  height: 150px;
-} */
-
 /* Card */
 header,
 #speech > div,
@@ -77,9 +71,7 @@ header,
   left: 0;
   width: 100%;
   height: 3px;
-  /* background: linear-gradient(90deg, transparent, #0175d8); */
   background: linear-gradient(90deg, rgba(0, 104, 249, 0) 0%, rgba(255, 255, 255, 1) 75%, rgba(0, 104, 249, 1) 100%);
-  /* background: linear-gradient(90deg, rgba(43, 53, 150, 0) 0%, rgba(1, 117, 220, 1) 75%, rgba(238, 238, 238, 1) 100%); */
   animation: animate1 5s linear infinite;
 }
 /* add keyframes for animation*/
@@ -100,7 +92,6 @@ header,
   height: 100%;
 
   background: linear-gradient(180deg, rgba(0, 104, 249, 0) 0%, rgba(255, 255, 255, 1) 75%, rgba(0, 104, 249, 1) 100%);
-  /* background: linear-gradient(180deg, rgba(43, 53, 150, 0) 0%, rgba(1, 117, 220, 1) 75%, rgba(238, 238, 238, 1) 100%); */
   animation: animate2 5s linear infinite;
   animation-delay: 6.25s;
 }
@@ -123,7 +114,6 @@ header,
   height: 3px;
 
   background: linear-gradient(270deg, rgba(0, 104, 249, 0) 0%, rgba(255, 255, 255, 1) 75%, rgba(0, 104, 249, 1) 100%);
-  /* background: linear-gradient(270deg, rgba(43, 53, 150, 0) 0%, rgba(1, 117, 220, 1) 75%, rgba(238, 238, 238, 1) 100%); */
   animation: animate3 5s linear infinite;
 }
 @keyframes animate3 {
@@ -143,7 +133,6 @@ header,
   height: 100%;
 
   background: linear-gradient(360deg, rgba(0, 104, 249, 0) 0%, rgba(255, 255, 255, 1) 75%, rgba(0, 104, 249, 1) 100%);
-  /* background: linear-gradient(360deg, rgba(43, 53, 150, 0) 0%, rgba(1, 117, 220, 1) 75%, rgba(238, 238, 238, 1) 100%); */
   animation: animate4 5s linear infinite;
   animation-delay: 6.25s;
 }

@@ -26,9 +26,9 @@ const SpeechNavigation = ({ setShowNav }) => {
     contact: '/contact',
   };
 
-  // if (!SpeechRecognition.browserSupportsSpeechRecognition()) {
-  //   return null;
-  // }
+  if (!SpeechRecognition.browserSupportsSpeechRecognition()) {
+    return null;
+  }
 
   let message = '';
 

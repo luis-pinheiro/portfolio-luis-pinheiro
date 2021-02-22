@@ -26,9 +26,9 @@ const SpeechNavigation = () => {
     contacto: '/contact',
   };
 
-  // if (!SpeechRecognition.browserSupportsSpeechRecognition()) {
-  //   return null;
-  // }
+  if (!SpeechRecognition.browserSupportsSpeechRecognition()) {
+    return null;
+  }
 
   let message = '';
 
@@ -75,7 +75,7 @@ const SpeechNavigation = () => {
           style={{ backgroundBlendMode: 'hue' }}
         >
           <div className="flex flex-col items-center justify-around w-screen h-screen bg-center bg-no-repeat ">
-            <h4 className="font-semibold text-7xl tangerine text-nord3 dark:text-nord5 dark:text-shadow ">
+            <h4 className="font-semibold text-center text-7xl tangerine text-nord3 dark:text-nord5 dark:text-shadow ">
               A escutar em português.
             </h4>
             <p

@@ -10,15 +10,12 @@ const iconLink = ({ to, icon, title, delay }) => {
 
   const variants = {
     initial: {
-      y: 100,
+      scale: 0,
       opacity: 0,
     },
     animate: {
-      y: 0,
+      scale: 1,
       opacity: 1,
-      transition: {
-        stiffness: 1000,
-      },
     },
     hover: {
       scale: 1.3,
@@ -38,12 +35,13 @@ const iconLink = ({ to, icon, title, delay }) => {
         type: 'spring',
         stiffness: 500,
       }}
+      exit={{ scale: 0 }}
     >
       <Link href={to}>
-        <motion.a className="">
+        <a className="">
           <i className={`${icon} text-4xl sm:text-5xl `}></i>
           <p className="text-base uppercase sm:text-lg md:text-xl">{title}</p>
-        </motion.a>
+        </a>
       </Link>
     </motion.div>
   );

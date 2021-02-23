@@ -7,6 +7,13 @@ const FloatingButton = ({ showNav, setShowNav }) => {
       style={{ bottom: '40px' }}
       onClick={() => setShowNav(!showNav)}
       whileTap={{ rotate: 90, scale: 0.75 }}
+      whileHover={{
+        scale: 1.3,
+      }}
+      transition={{
+        type: 'spring',
+        stiffness: 500,
+      }}
     >
       <i className="fas fa-ellipsis-v text-nord4 dark:text-nord3"></i>
     </motion.button>

@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import { motion } from 'framer-motion';
 
 const CardWork2 = ({ img, title, description, tags, link, linkCode }) => {
   let website = true;
@@ -10,8 +11,35 @@ const CardWork2 = ({ img, title, description, tags, link, linkCode }) => {
   if (linkCode === '') {
     code = false;
   }
+
+  const cardVariants = {
+    initial: {
+      opacity: 0,
+      scale: 0,
+    },
+    animate: {
+      opacity: 1,
+      scale: 1,
+    },
+    exit: {
+      scale: 0,
+      opacity: 0,
+      transition: {
+        delay: 0.5,
+      },
+    },
+  };
+
   return (
-    <div>
+    <motion.div
+      variants={cardVariants}
+      initial="initial"
+      animate="animate"
+      exit="exit"
+      transition={{
+        type: 'tween',
+      }}
+    >
       <div
         className="flex flex-col mx-auto overflow-hidden text-center border-transparent rounded-lg opacity-90 card-work bg-nord6 dark:bg-nord1 elevation-2"
         style={{
@@ -19,12 +47,13 @@ const CardWork2 = ({ img, title, description, tags, link, linkCode }) => {
           height: '400px',
         }}
       >
-        {/* <div
-        className="flex flex-col justify-center pb-4 text-center card-layer inner-element"
-        style={{ width: '265px', marginTop: '-377px', height: '353px', marginLeft: '-1px' }}
-      > */}
-        <Image className="object-cover object-center rounded-t-lg img-card" src={img} alt={title} width={300}
-        height={168.23} />
+        <Image
+          className="object-cover object-center rounded-t-lg img-card"
+          src={img}
+          alt={title}
+          width={300}
+          height={168.23}
+        />
         <div className="flex flex-col my-auto">
           <h1 className="mb-3 text-xl font-medium text-nord0 dark:text-nord6 dark:text-shadow title-font ">{title}</h1>
           <p className="mb-3 leading-relaxed text-nord1 dark:text-nord5 dark:text-shadow ">{description}</p>
@@ -43,32 +72,46 @@ const CardWork2 = ({ img, title, description, tags, link, linkCode }) => {
         </div>
         <div className="flex flex-row content-around mt-auto text-base ">
           {website && (
-            <a
+            <motion.a
               href={link}
               target="_blank"
               rel="noopener"
               className="flex flex-col items-center justify-center flex-1 w-full p-4 mx-auto text-center dark:hover:text-nord6 dark:text-shadow dark:text-nord4 dark:hover:text-shadow-lg text-nord3"
+              whileHover={{
+                scale: 1.3,
+              }}
+              transition={{
+                type: 'spring',
+                stiffness: 500,
+              }}
             >
               <i className="w-full text-lg fas fa-globe"></i>
               <p className="">Website</p>
-            </a>
+            </motion.a>
           )}
 
           {code && (
-            <a
+            <motion.a
               href={linkCode}
               target="_blank"
               rel="noopener"
               className="flex flex-col items-center justify-center flex-1 w-full p-4 mx-auto text-center dark:hover:text-nord6 dark:text-shadow dark:text-nord4 dark:hover:text-shadow-lg text-nord3"
+              whileHover={{
+                scale: 1.3,
+              }}
+              transition={{
+                type: 'spring',
+                stiffness: 500,
+              }}
             >
               <i className="w-full text-lg fas fa-code"></i>
               <p>Source Code</p>
-            </a>
+            </motion.a>
           )}
         </div>
       </div>
       {/* </div> */}
-    </div>
+    </motion.div>
   );
 };
 

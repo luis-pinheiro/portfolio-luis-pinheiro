@@ -28,7 +28,10 @@ const iconLink = ({ to, icon, title, delay }) => {
         type: 'spring',
         stiffness: 500,
       }}
-      exit={{ scale: 0 }}
+      exit={{
+        scale: 0,
+        opacity: 0,
+      }}
     >
       <Link href={to}>
         <a className="">

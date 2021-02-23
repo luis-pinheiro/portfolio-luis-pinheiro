@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import Switch from './../components/Switch2';
 import 'tailwindcss/tailwind.css';
 import '../styles/globals.css';
@@ -8,11 +8,13 @@ import SwitchToPt from '../components/SwitchToPt';
 import SwitchToNl from '../components/SwitchToNl';
 import FloatingButton from './../components/FloatingButton';
 import { AnimatePresence } from 'framer-motion';
+import { useRouter } from 'next/router';
 
 function MyApp({ Component, pageProps }) {
   const [isToggled, setIsToggled] = useState(false);
   const [showNav, setShowNav] = useState(true);
   const [firstShowNav, setFirstShowNav] = useState(false);
+  const router = useRouter();
 
   if (!firstShowNav) {
     setTimeout(() => {
@@ -21,14 +23,20 @@ function MyApp({ Component, pageProps }) {
     }, 2000);
   }
 
+  function handleExitComplete() {
+    if (typeof window !== 'undefined') {
+      window.scrollTo({ top: 0 });
+    }
+  }
+
   return (
     <div
       className={`relative flex flex-col justify-center min-h-screen align-middle bg-center bg-no-repeat bg-cover
        ${isToggled ? 'dark' : ''} bg-profitcreations effect7`}
     >
       <div>
-        <AnimatePresence>
-          <Component {...pageProps} />
+        <AnimatePresence exitBeforeEnter onExitComplete={handleExitComplete}>
+          <Component {...pageProps} key={router.route} />
         </AnimatePresence>
         {showNav && (
           <div>

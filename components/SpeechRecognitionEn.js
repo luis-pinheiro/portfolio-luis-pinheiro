@@ -125,7 +125,7 @@ const SpeechNavigation = ({ setShowNav }) => {
       {listening && (
         <span
           className="fixed flex w-8 h-8 rounded-full animate-ping z-60 right-7 bg-nord11"
-          style={{ bottom: '316px' }}
+          style={{ bottom: '274px' }}
         ></span>
       )}
     </div>

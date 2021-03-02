@@ -21,7 +21,7 @@ const work = (props) => {
           <CardWork
             img="/images/portfolio/apostagratis.png"
             title="Aposta Gratis"
-            description="Website"
+            description="WordPress Theme"
             tags="WordPress TailwindCss Gulp"
             link="https://apostagratis.pt/"
             linkCode="https://github.com/luis-pinheiro/casinos-7"

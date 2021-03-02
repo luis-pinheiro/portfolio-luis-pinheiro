@@ -19,6 +19,15 @@ const work = (props) => {
       <CardFolio classes="">
         <div className="container grid w-full h-full px-5 mx-auto mb-28 gap-7 lg:pt-20 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 auto-rows-auto">
           <CardWork
+            img="/images/portfolio/apostagratis.png"
+            title="Aposta Gratis"
+            description="Website"
+            tags="WordPress TailwindCss Gulp"
+            link="https://apostagratis.pt/"
+            linkCode="https://github.com/luis-pinheiro/casinos-7"
+          />
+
+          <CardWork
             img="/images/portfolio/next-portfolio.png"
             title="Next-Portfolio"
             description="Website"
@@ -35,22 +44,22 @@ const work = (props) => {
             link="https://luis-pinheiro.github.io/"
             linkCode="https://github.com/luis-pinheiro/luis-pinheiro.github.io"
           />
-          <CardWork
+          {/* <CardWork
             img="/images/portfolio/latuta.png"
             title="Latuta"
             description="WordPress Theme"
             tags="MATERIALIZECSS WORDPRESS SASS"
             link=""
             linkCode="https://github.com/luis-pinheiro/Latuta"
-          />
-          <CardWork
+          /> */}
+          {/* <CardWork
             img="/images/portfolio/nc-customs.png"
             title="NC-Customs"
             description="WordPress Theme"
             tags="MATERIALIZECSS WORDPRESS SASS"
             link=""
             linkCode="https://bitbucket.org/ProfitCreations/nccustoms-wp/src/master/"
-          />
+          /> */}
           {/* <CardWork
             img="/images/portfolio/Trendytv.png"
             title="TrendyTV"

@@ -19,6 +19,11 @@ body {
   font-display: swap;
 }
 
+.img-card {
+  width: 300px !important;
+  height: 168.23px !important;
+}
+
 .bg-profitcreations {
   background-attachment: fixed !important;
 }

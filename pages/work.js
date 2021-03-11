@@ -1,7 +1,8 @@
 import CardFolio from '../components/CardFolio';
 import CardHeader from '../components/CardHeader';
 import '@fortawesome/fontawesome-free';
-import CardWork from '../components/CardWork';
+// import CardWork from '../components/CardWork';
+import CardWork from '../components/CardWork2';
 import AllPagesLayout from '../layouts/allPagesLayout';
 import useTranslation from 'next-translate/useTranslation';
 import Head from 'next/head';

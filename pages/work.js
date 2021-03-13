@@ -61,14 +61,7 @@ const work = (props) => {
             link=""
             linkCode="https://bitbucket.org/ProfitCreations/nccustoms-wp/src/master/"
           />
-          <CardWork
-            img="/images/portfolio/Trendytv.png"
-            title="TrendyTV"
-            description="Website"
-            tags="HTML BOOTSTRAP JQUERY LESS"
-            link=""
-            linkCode=""
-          />
+
           <CardWork
             img="/images/portfolio/vastgoedjunior.png"
             title="VastGoedJunior"

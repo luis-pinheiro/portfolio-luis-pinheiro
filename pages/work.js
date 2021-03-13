@@ -67,12 +67,36 @@ const work = (props) => {
             img="/images/portfolio/Calculator.png"
             title="Javascript Calculator"
             description="Responsive Calculator made with JavaScript"
-            tags=" Html5 CSS3 Javascript Bootstrap jQuery Sass"
+            tags="Html5 CSS3 Javascript Bootstrap jQuery Sass"
             link=""
             linkCode=""
             linkDeployed=""
             codepenLink="http://codepen.io/ProfitCreations/full/VbwmRZ/"
           />
+
+          {/* Pomodoro Clock */}
+          <CardWork
+            img="/images/portfolio/Pomodoro.png"
+            title="Pomodoro Clock"
+            description="Pomodoro Clock made in Javascript"
+            tags="Html5 CSS3 Javascript Bootstrap jQuery Sass"
+            link=""
+            linkCode=""
+            linkDeployed=""
+            codepenLink="https://codepen.io/ProfitCreations/full/YVWYOm/"
+          />
+
+          {/* */}
+          {/* <CardWork
+            img=""
+            title=""
+            description=""
+            tags=""
+            link=""
+            linkCode=""
+            linkDeployed=""
+            codepenLink="http://codepen.io/ProfitCreations/full/VbwmRZ/"
+          /> */}
 
           <CardWork
             img="/images/portfolio/latuta.png"

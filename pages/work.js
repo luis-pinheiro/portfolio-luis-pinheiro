@@ -57,7 +57,7 @@ const work = (props) => {
             img="/images/portfolio/nc-customs.png"
             title="NC-Customs"
             description="WordPress Theme"
-            tags="MATERIALIZECSS WORDPRESS SASS"
+            tags="MATERIALIZECSS WORDPRESS SASS php"
             link=""
             linkCode="https://bitbucket.org/ProfitCreations/nccustoms-wp/src/master/"
           />

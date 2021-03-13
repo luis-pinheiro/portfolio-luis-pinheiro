@@ -62,6 +62,18 @@ const work = (props) => {
             linkDeployed=""
             codepenLink="http://codepen.io/ProfitCreations/full/aWjMRa/"
           />
+          {/* Javascript Calculator */}
+          <CardWork
+            img="/images/portfolio/Calculator.png"
+            title="Javascript Calculator"
+            description="Responsive Calculator made with JavaScript"
+            tags=" Html5 CSS3 Javascript Bootstrap jQuery Sass"
+            link=""
+            linkCode=""
+            linkDeployed=""
+            codepenLink="http://codepen.io/ProfitCreations/full/VbwmRZ/"
+          />
+
           <CardWork
             img="/images/portfolio/latuta.png"
             title="Latuta"

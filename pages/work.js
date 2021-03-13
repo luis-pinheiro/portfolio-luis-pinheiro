@@ -23,7 +23,7 @@ const work = (props) => {
             img="/images/portfolio/apostagratis.png"
             title="Aposta Gratis"
             description="WordPress Theme"
-            tags="WordPress TailwindCss Gulp"
+            tags="WordPress TailwindCss Gulp node php"
             link="https://apostagratis.pt/"
             linkCode="https://github.com/luis-pinheiro/casinos-7"
           />

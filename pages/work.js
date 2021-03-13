@@ -26,6 +26,8 @@ const work = (props) => {
             tags="WordPress TailwindCss Gulp node php"
             link="https://apostagratis.pt/"
             linkCode="https://github.com/luis-pinheiro/casinos-7"
+            linkDeployed=""
+            codepenLink=""
           />
 
           <CardWork
@@ -35,6 +37,8 @@ const work = (props) => {
             tags="ReactJs NextJs TailwindCss Nord framer-motion next-translate postcss react-speech-recognition use-dencrypt-effect"
             link=""
             linkCode="https://github.com/luis-pinheiro/portfolio-nextjs"
+            linkDeployed=""
+            codepenLink=""
           />
 
           <CardWork
@@ -44,6 +48,19 @@ const work = (props) => {
             tags="BOOTSTRAP JQUERY SASS gulp materialize-css t-scroll"
             link="https://luis-pinheiro.github.io/"
             linkCode="https://github.com/luis-pinheiro/luis-pinheiro.github.io"
+            linkDeployed=""
+            codepenLink=""
+          />
+          {/* Simon Game */}
+          <CardWork
+            img="/images/portfolio/simon.png"
+            title="Simon Game"
+            description="Game in JavaScript"
+            tags="Html5 CSS3 Javascript Bootstrap AnimateCss jQuery Sass"
+            link=""
+            linkCode=""
+            linkDeployed=""
+            codepenLink="http://codepen.io/ProfitCreations/full/aWjMRa/"
           />
           <CardWork
             img="/images/portfolio/latuta.png"
@@ -52,6 +69,8 @@ const work = (props) => {
             tags="MATERIALIZECSS WORDPRESS SASS sage gulp"
             link=""
             linkCode="https://github.com/luis-pinheiro/Latuta"
+            linkDeployed=""
+            codepenLink=""
           />
           <CardWork
             img="/images/portfolio/nc-customs.png"
@@ -60,6 +79,8 @@ const work = (props) => {
             tags="MATERIALIZECSS WORDPRESS SASS php"
             link=""
             linkCode="https://bitbucket.org/ProfitCreations/nccustoms-wp/src/master/"
+            linkDeployed=""
+            codepenLink=""
           />
 
           <CardWork
@@ -69,13 +90,17 @@ const work = (props) => {
             tags="BOOTSTRAP JQUERY JOOMLA LESS php"
             link=""
             linkCode="https://github.com/luis-pinheiro/VastGoedJunior"
+            linkDeployed=""
+            codepenLink=""
           />
           <CardWork
             img="/images/portfolio/teetopup.png"
             title="TeeTopUp"
             description="PSD to Html5, CSS3, Javascript"
             tags="Html5 CSS3 Javascript Bootstrap jQuery Gulp Npm Coffeescript Sass"
-            link="https://teetopup-profitcreations.vercel.app/"
+            link=""
+            linkDeployed="https://teetopup-profitcreations.vercel.app/"
+            codepenLink=""
             linkCode="https://github.com/luis-pinheiro/teetopup"
           />
         </div>

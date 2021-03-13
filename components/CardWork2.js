@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence, useAnimation } from 'framer-motion';
 
-const CardWork2 = ({ img, title, description, tags, link, linkCode }) => {
+const CardWork2 = ({ img, title, description, tags, link, linkCode, linkDeployed, codepenLink }) => {
   const [show, setShow] = useState(false);
 
   const controls = useAnimation();
@@ -25,6 +25,17 @@ const CardWork2 = ({ img, title, description, tags, link, linkCode }) => {
   if (linkCode === '') {
     code = false;
   }
+
+  let deployed = true;
+  if (linkDeployed === '') {
+    deployed = false;
+  }
+
+  let codepen = true;
+  if (codepenLink === '') {
+    codepen = false;
+  }
+
   return (
     <div className="mx-auto card">
       <img
@@ -120,6 +131,60 @@ const CardWork2 = ({ img, title, description, tags, link, linkCode }) => {
                 >
                   <i className="w-full text-lg fas fa-globe"></i>
                   <p className="">Website</p>
+                </motion.a>
+              )}
+
+              {/* deployed */}
+              {deployed && (
+                <motion.a
+                  href={linkDeployed}
+                  target="_blank"
+                  rel="noopener"
+                  className="flex flex-col items-center justify-center flex-1 w-full p-4 mx-auto text-center dark:hover:text-nord6 dark:text-shadow dark:text-nord4 dark:hover:text-shadow-lg text-nord3"
+                  whileHover={{
+                    scale: 1.3,
+                  }}
+                  transition={{
+                    type: 'spring',
+                    stiffness: 500,
+                  }}
+                  initial={{
+                    scale: 0,
+                  }}
+                  animate={{
+                    scale: 1,
+                  }}
+                  exit={{ scale: 0, opacity: 0 }}
+                >
+                  <i className="w-full text-lg fab fa-html5"></i>
+                  <p>View Deployed</p>
+                </motion.a>
+              )}
+
+              {/* codepen */}
+              {codepen && (
+                <motion.a
+                  href={codepenLink}
+                  target="_blank"
+                  rel="noopener"
+                  className="flex flex-col items-center justify-center flex-1 w-full p-4 mx-auto text-center dark:hover:text-nord6 dark:text-shadow dark:text-nord4 dark:hover:text-shadow-lg text-nord3"
+                  whileHover={{
+                    scale: 1.3,
+                  }}
+                  transition={{
+                    type: 'spring',
+                    stiffness: 500,
+                  }}
+                  initial={{
+                    scale: 0,
+                  }}
+                  animate={{
+                    scale: 1,
+                  }}
+                  exit={{ scale: 0, opacity: 0 }}
+                >
+                  <i className="w-full text-lg fab fa-codepen"></i>
+                  <p>View on CodePen</p>
                 </motion.a>
               )}
 

@@ -45,7 +45,7 @@ const CardWork2 = ({ img, title, description, tags, link, linkCode }) => {
               opacity: 0,
             }}
             animate={{
-              height: '270px',
+              height: '290px',
               y: -15,
               opacity: 1,
             }}

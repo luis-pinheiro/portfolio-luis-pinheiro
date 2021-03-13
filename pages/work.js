@@ -32,7 +32,7 @@ const work = (props) => {
             img="/images/portfolio/next-portfolio.png"
             title="Next-Portfolio"
             description="Website"
-            tags="ReactJs NextJs TailwindCss Nord"
+            tags="ReactJs NextJs TailwindCss Nord framer-motion next-translate postcss react-speech-recognition use-dencrypt-effect"
             link=""
             linkCode="https://github.com/luis-pinheiro/portfolio-nextjs"
           />
@@ -41,7 +41,7 @@ const work = (props) => {
             img="/images/portfolio/profitcreations.png"
             title={t('work:oldPortfolio.title')}
             description={t('work:oldPortfolio.description')}
-            tags="BOOTSTRAP JQUERY SASS gulp"
+            tags="BOOTSTRAP JQUERY SASS gulp materialize-css t-scroll"
             link="https://luis-pinheiro.github.io/"
             linkCode="https://github.com/luis-pinheiro/luis-pinheiro.github.io"
           />

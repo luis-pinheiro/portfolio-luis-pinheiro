@@ -49,7 +49,7 @@ const work = (props) => {
             img="/images/portfolio/latuta.png"
             title="Latuta"
             description="WordPress Theme"
-            tags="MATERIALIZECSS WORDPRESS SASS"
+            tags="MATERIALIZECSS WORDPRESS SASS sage gulp"
             link=""
             linkCode="https://github.com/luis-pinheiro/Latuta"
           />

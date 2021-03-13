@@ -45,23 +45,23 @@ const work = (props) => {
             link="https://luis-pinheiro.github.io/"
             linkCode="https://github.com/luis-pinheiro/luis-pinheiro.github.io"
           />
-          {/* <CardWork
+          <CardWork
             img="/images/portfolio/latuta.png"
             title="Latuta"
             description="WordPress Theme"
             tags="MATERIALIZECSS WORDPRESS SASS"
             link=""
             linkCode="https://github.com/luis-pinheiro/Latuta"
-          /> */}
-          {/* <CardWork
+          />
+          <CardWork
             img="/images/portfolio/nc-customs.png"
             title="NC-Customs"
             description="WordPress Theme"
             tags="MATERIALIZECSS WORDPRESS SASS"
             link=""
             linkCode="https://bitbucket.org/ProfitCreations/nccustoms-wp/src/master/"
-          /> */}
-          {/* <CardWork
+          />
+          <CardWork
             img="/images/portfolio/Trendytv.png"
             title="TrendyTV"
             description="Website"
@@ -72,19 +72,19 @@ const work = (props) => {
           <CardWork
             img="/images/portfolio/vastgoedjunior.png"
             title="VastGoedJunior"
-            description="Website"
-            tags="BOOTSTRAP JQUERY JOOMLA LESS"
+            description="Joomla Theme"
+            tags="BOOTSTRAP JQUERY JOOMLA LESS php"
             link=""
-            linkCode=""
+            linkCode="https://github.com/luis-pinheiro/VastGoedJunior"
           />
           <CardWork
             img="/images/portfolio/teetopup.png"
             title="TeeTopUp"
-            description="FrontEnd"
-            tags="HTML BOOTSTRAP COFFEESCRIPT SASS"
-            link=""
-            linkCode=""
-          /> */}
+            description="PSD to Html5, CSS3, Javascript"
+            tags="Html5 CSS3 Javascript Bootstrap jQuery Gulp Npm Coffeescript Sass"
+            link="https://teetopup-profitcreations.vercel.app/"
+            linkCode="https://github.com/luis-pinheiro/teetopup"
+          />
         </div>
       </CardFolio>
     </div>

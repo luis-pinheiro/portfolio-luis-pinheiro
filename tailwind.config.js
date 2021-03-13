@@ -42,6 +42,9 @@ module.exports = {
         80: 80,
         90: 90,
       },
+      width: {
+        '300px': '300px',
+      },
     },
     textIndent: {
       // defaults to {}
@@ -218,6 +221,7 @@ module.exports = {
     fontVariantNumeric: ['responsive'],
     fontVariantLigatures: ['responsive'],
     textRendering: ['responsive'],
+    width: ['responsive'],
   },
   plugins: [
     require('tailwindcss-elevation')(['responsive', 'group-hover', 'focus-within', 'hover', 'focus']),

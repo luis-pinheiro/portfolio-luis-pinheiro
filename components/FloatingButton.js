@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 const FloatingButton = ({ showNav, setShowNav }) => {
   return (
     <motion.button
-      className="fixed block w-12 h-12 border-2 rounded-full bg-nord3 dark:bg-nord4 border-nord4 elevation-5 z-70 dark:border-nord3 right-5 "
+      className="fixed block w-12 h-12 border-2 rounded-full outline-none bg-nord3 dark:bg-nord4 border-nord4 elevation-5 z-70 dark:border-nord3 right-5 "
       style={{ bottom: '40px' }}
       onClick={() => setShowNav(!showNav)}
       whileTap={{ rotate: 90, scale: 0.75 }}

@@ -1,8 +1,20 @@
-import React, { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import React, { useState, useEffect } from 'react';
+import { motion, AnimatePresence, useAnimation } from 'framer-motion';
 
 const CardWork2 = ({ img, title, description, tags, link, linkCode }) => {
   const [show, setShow] = useState(false);
+
+  const controls = useAnimation();
+
+  useEffect(() => {
+    controls.start((i) => ({
+      opacity: 0,
+      x: 100,
+      transition: {
+        delay: i - 0.3,
+      },
+    }));
+  }, []);
 
   let website = true;
   if (link === '') {
@@ -26,14 +38,14 @@ const CardWork2 = ({ img, title, description, tags, link, linkCode }) => {
       <AnimatePresence exitBeforeEnter>
         {show && (
           <motion.div
-            className="flex flex-col content-between rounded-b-lg elevation-7 pt-7 card-content bg-nord6 dark:bg-nord1"
+            className="flex flex-col content-between rounded-b-lg w-300px elevation-7 pt-7 card-content bg-nord6 dark:bg-nord1"
             initial={{
               height: 160,
               y: '-168px',
               opacity: 0,
             }}
             animate={{
-              height: '300px',
+              height: '270px',
               y: -15,
               opacity: 1,
             }}
@@ -73,12 +85,14 @@ const CardWork2 = ({ img, title, description, tags, link, linkCode }) => {
             <div className="flex flex-wrap content-around justify-center text-center ">
               {tags.split(' ').map((tag) => {
                 return (
-                  <span
+                  <motion.span
                     key={tag}
                     className="self-center px-2 py-1 m-1 text-xs rounded elevation-1 bg-nord4 dark:elevation-1 dark:text-shadow dark:text-nord4 dark:bg-nord3 text-nord3 caps-all-small"
+                    custom={tag}
+                    animate={controls}
                   >
                     {tag}
-                  </span>
+                  </motion.span>
                 );
               })}
             </div>

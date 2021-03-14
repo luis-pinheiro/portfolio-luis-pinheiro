@@ -86,6 +86,18 @@ const work = (props) => {
             codepenLink="https://codepen.io/ProfitCreations/full/YVWYOm/"
           />
 
+          {/* Tic Tac Toe */}
+          <CardWork
+            img="/images/portfolio/TicTacToe.png"
+            title="TicTacToe Game"
+            description="TicTacToe game made in JavaScript"
+            tags="Html5 CSS3 Javascript Bootstrap jQuery Sass"
+            link=""
+            linkCode=""
+            linkDeployed=""
+            codepenLink="http://codepen.io/ProfitCreations/full/vmXVxE/"
+          />
+
           {/* */}
           {/* <CardWork
             img=""
@@ -95,7 +107,51 @@ const work = (props) => {
             link=""
             linkCode=""
             linkDeployed=""
-            codepenLink="http://codepen.io/ProfitCreations/full/VbwmRZ/"
+            codepenLink=""
+          /> */}
+          {/* */}
+          {/* <CardWork
+            img=""
+            title=""
+            description=""
+            tags=""
+            link=""
+            linkCode=""
+            linkDeployed=""
+            codepenLink=""
+          /> */}
+          {/* */}
+          {/* <CardWork
+            img=""
+            title=""
+            description=""
+            tags=""
+            link=""
+            linkCode=""
+            linkDeployed=""
+            codepenLink=""
+          /> */}
+          {/* */}
+          {/* <CardWork
+            img=""
+            title=""
+            description=""
+            tags=""
+            link=""
+            linkCode=""
+            linkDeployed=""
+            codepenLink=""
+          /> */}
+          {/* */}
+          {/* <CardWork
+            img=""
+            title=""
+            description=""
+            tags=""
+            link=""
+            linkCode=""
+            linkDeployed=""
+            codepenLink=""
           /> */}
 
           <CardWork

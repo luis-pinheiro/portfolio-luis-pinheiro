@@ -109,17 +109,17 @@ const work = (props) => {
             linkDeployed=""
             codepenLink="http://codepen.io/ProfitCreations/full/apaJyd/"
           />
-          {/* */}
-          {/* <CardWork
-            img=""
-            title=""
-            description=""
-            tags=""
+          {/* Random Quotes */}
+          <CardWork
+            img="/images/portfolio/random-quotes.png"
+            title="Random Quotes"
+            description="FreeCodeCamp Project"
+            tags="Html5 CSS3 Javascript Bootstrap jQuery Sass"
             link=""
             linkCode=""
             linkDeployed=""
-            codepenLink=""
-          /> */}
+            codepenLink="http://codepen.io/ProfitCreations/full/dNdmJd/"
+          />
           {/* */}
           {/* <CardWork
             img=""

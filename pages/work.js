@@ -98,17 +98,17 @@ const work = (props) => {
             codepenLink="http://codepen.io/ProfitCreations/full/vmXVxE/"
           />
 
-          {/* */}
-          {/* <CardWork
-            img=""
-            title=""
-            description=""
-            tags=""
+          {/* TwichTV Api*/}
+          <CardWork
+            img="/images/portfolio/twitchtv.png"
+            title="TwitchTv api"
+            description="FreeCodeCamp Project"
+            tags="Html5 CSS3 Javascript Bootstrap jQuery Sass"
             link=""
             linkCode=""
             linkDeployed=""
-            codepenLink=""
-          /> */}
+            codepenLink="http://codepen.io/ProfitCreations/full/apaJyd/"
+          />
           {/* */}
           {/* <CardWork
             img=""

@@ -19,7 +19,7 @@ const work = (props) => {
 
       <CardFolio classes="">
         <div className="container grid w-full h-full px-5 mx-auto mb-28 gap-7 lg:pt-20 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 auto-rows-auto">
-          <CardWork
+          {/* <CardWork
             img="/images/portfolio/apostagratis.png"
             title="Aposta Gratis"
             description="WordPress Theme"
@@ -28,7 +28,7 @@ const work = (props) => {
             linkCode="https://github.com/luis-pinheiro/casinos-7"
             linkDeployed=""
             codepenLink=""
-          />
+          /> */}
 
           <CardWork
             img="/images/portfolio/next-portfolio.png"
@@ -120,17 +120,17 @@ const work = (props) => {
             linkDeployed=""
             codepenLink="http://codepen.io/ProfitCreations/full/dNdmJd/"
           />
-          {/* */}
-          {/* <CardWork
-            img=""
-            title=""
-            description=""
-            tags=""
+          {/*  wikipedia viewer */}
+          <CardWork
+            img="/images/portfolio/wiki.png"
+            title="Wikipedia Viewer"
+            description="FreeCodeCamp Project"
+            tags="Html5 CSS3 Javascript Bootstrap jQuery Sass"
             link=""
             linkCode=""
             linkDeployed=""
-            codepenLink=""
-          /> */}
+            codepenLink="https://codepen.io/ProfitCreations/full/pRVWMO/"
+          />
           {/* */}
           {/* <CardWork
             img=""

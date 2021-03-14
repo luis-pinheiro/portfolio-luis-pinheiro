@@ -12,7 +12,7 @@ const CardHeader = ({ icon, title }) => {
           <Link href="/">
             <motion.button
               type="button"
-              className="flex items-center justify-center w-full px-4 py-2 text-base font-semibold text-center rounded-full shadow-md dark:bg-nord4 dark:hover:bg-nord3 text-nord1 bg-nord8 dark:hover:text-shadow elevation-1 dark:hover:text-nord6 hover:bg-nord7 hover:elevation-2 "
+              className="flex items-center justify-center w-full px-4 py-2 text-base font-semibold text-center rounded-full shadow-md outline-none dark:bg-nord4 dark:hover:bg-nord3 text-nord1 bg-nord8 dark:hover:text-shadow elevation-1 dark:hover:text-nord6 hover:bg-nord7 hover:elevation-2 "
               whileHover={{ scale: 1.3 }}
               transition={{
                 type: 'spring',

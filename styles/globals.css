@@ -3,6 +3,12 @@ body {
   @apply debug-screens;
 } */
 
+/* @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+.oswald {
+  font-family: 'Oswald', sans-serif;
+} */
+
 @font-face {
   font-family: tangerine;
   src: url('/fonts/Tangerine/Tangerine-Regular.ttf');
@@ -17,6 +23,10 @@ body {
   font-family: 'Source Code Pro';
   src: url('/fonts/Source_Code_Pro/SourceCodePro-Regular.ttf');
   font-display: swap;
+}
+
+body {
+  font-family: 'Oswald', sans-serif;
 }
 
 .img-card {

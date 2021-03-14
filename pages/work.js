@@ -51,6 +51,29 @@ const work = (props) => {
             linkDeployed=""
             codepenLink=""
           />
+          {/* Markdown*/}
+          <CardWork
+            img="/images/portfolio/markdown.png"
+            title="Markdown Previewer"
+            description="App made in ReactJs"
+            tags="React bootstrap marked freecodecamp"
+            link=""
+            linkCode=""
+            linkDeployed=""
+            codepenLink="https://codepen.io/ProfitCreations/full/JjRoyoz"
+          />
+          {/* Drum machine */}
+          <CardWork
+            img="/images/portfolio/drum.png"
+            title="Drum machine"
+            description="Drum machine app made in reactJs"
+            tags="React bootstrap freecodecamp"
+            link=""
+            linkCode=""
+            linkDeployed=""
+            codepenLink="https://codepen.io/ProfitCreations/full/GRjZXbV"
+          />
+
           {/* Simon Game */}
           <CardWork
             img="/images/portfolio/simon.png"
@@ -131,28 +154,6 @@ const work = (props) => {
             linkDeployed=""
             codepenLink="https://codepen.io/ProfitCreations/full/pRVWMO/"
           />
-          {/* Markdown*/}
-          <CardWork
-            img="/images/portfolio/markdown.png"
-            title="Markdown Previewer"
-            description="App made in ReactJs"
-            tags="React bootstrap marked freecodecamp"
-            link=""
-            linkCode=""
-            linkDeployed=""
-            codepenLink="https://codepen.io/ProfitCreations/full/JjRoyoz"
-          />
-          {/* */}
-          {/* <CardWork
-            img=""
-            title=""
-            description=""
-            tags=""
-            link=""
-            linkCode=""
-            linkDeployed=""
-            codepenLink=""
-          /> */}
 
           <CardWork
             img="/images/portfolio/latuta.png"

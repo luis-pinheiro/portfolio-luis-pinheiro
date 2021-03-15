@@ -44,6 +44,7 @@ module.exports = {
       },
       width: {
         '300px': '300px',
+        '275px': '275px',
       },
     },
     textIndent: {

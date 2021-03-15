@@ -4,17 +4,17 @@ import { motion, AnimatePresence, useAnimation } from 'framer-motion';
 const CardWork2 = ({ img, title, description, tags, link, linkCode, linkDeployed, codepenLink }) => {
   const [show, setShow] = useState(false);
 
-  const controls = useAnimation();
+  // const controls = useAnimation();
 
-  useEffect(() => {
-    controls.start((i) => ({
-      opacity: 0,
-      x: 100,
-      transition: {
-        delay: i - 0.3,
-      },
-    }));
-  }, []);
+  // useEffect(() => {
+  //   controls.start((i) => ({
+  //     opacity: 0,
+  //     x: 100,
+  //     transition: {
+  //       delay: i - 0.3,
+  //     },
+  //   }));
+  // }, []);
 
   let website = true;
   if (link === '') {
@@ -39,7 +39,9 @@ const CardWork2 = ({ img, title, description, tags, link, linkCode, linkDeployed
   return (
     <div className="mx-auto card">
       <img
-        className="relative z-20 object-cover object-center rounded-lg cursor-pointer img-card elevation-4 hover:elevation-12"
+        className={`relative  object-cover object-center rounded-lg cursor-pointer img-card elevation-4 hover:elevation-12 transform duration-75 ${
+          show ? ' scale-105 z-10 elevation-10' : 'z-20'
+        }`}
         src={img}
         alt={title}
         onClick={() => {
@@ -49,31 +51,37 @@ const CardWork2 = ({ img, title, description, tags, link, linkCode, linkDeployed
       <AnimatePresence exitBeforeEnter>
         {show && (
           <motion.div
-            className="flex flex-col content-between rounded-b-lg w-300px elevation-7 pt-7 card-content bg-nord6 dark:bg-nord1"
+            className="relative flex flex-col content-between mx-auto rounded-lg opacity-95 w-275px elevation-7 pt-7 card-content bg-nord6 dark:bg-nord1"
             initial={{
-              height: 160,
-              y: '-168px',
+              height: 0,
+              zIndex: 10,
+              y: 15,
               opacity: 0,
             }}
             animate={{
               height: '290px',
-              y: -15,
+
+              y: [0, 15, -15],
               opacity: 1,
+              zIndex: 20,
             }}
-            transition={{ duration: 1 }}
+            transition={{
+              duration: 0.5,
+            }}
             exit={{
-              height: 160,
-              y: '-168px',
+              height: 15,
+              y: [0, 15, -168],
               opacity: 0,
+              zIndex: 10,
             }}
           >
             <motion.h1
-              className="mb-3 text-xl font-medium text-center text-nord0 dark:text-nord6 dark:text-shadow title-font "
+              className="mb-3 text-xl font-medium text-center text-nord2 dark:text-nord6 dark:text-shadow title-font "
               initial={{ opacity: 0 }}
               animate={{
                 opacity: 1,
                 transition: {
-                  delay: 1,
+                  delay: 0.5,
                 },
               }}
               exit={{ opacity: 0 }}
@@ -81,12 +89,12 @@ const CardWork2 = ({ img, title, description, tags, link, linkCode, linkDeployed
               {title}
             </motion.h1>
             <motion.p
-              className="mb-3 leading-relaxed text-center text-nord1 dark:text-nord5 dark:text-shadow "
+              className="mb-3 leading-relaxed text-center text-nord2 dark:text-nord5 dark:text-shadow "
               initial={{ opacity: 0 }}
               animate={{
                 opacity: 1,
                 transition: {
-                  delay: 1.2,
+                  delay: 0.7,
                 },
               }}
               exit={{ opacity: 0 }}
@@ -100,14 +108,31 @@ const CardWork2 = ({ img, title, description, tags, link, linkCode, linkDeployed
                     key={tag}
                     className="self-center px-2 py-1 m-1 text-xs rounded elevation-1 bg-nord4 dark:elevation-1 dark:text-shadow dark:text-nord4 dark:bg-nord3 text-nord3 caps-all-small"
                     custom={tag}
-                    animate={controls}
+                    initial={{ opacity: 0 }}
+                    animate={{
+                      opacity: 1,
+                      transition: {
+                        delay: 0.9,
+                      },
+                    }}
+                    exit={{ opacity: 0 }}
                   >
                     {tag}
                   </motion.span>
                 );
               })}
             </div>
-            <div className="flex flex-row content-around mt-auto text-base ">
+            <motion.div
+              className="flex flex-row content-around mt-auto text-base "
+              initial={{ opacity: 0 }}
+              animate={{
+                opacity: 1,
+                transition: {
+                  delay: 1.1,
+                },
+              }}
+              exit={{ opacity: 0 }}
+            >
               {website && (
                 <motion.a
                   href={link}
@@ -213,7 +238,7 @@ const CardWork2 = ({ img, title, description, tags, link, linkCode, linkDeployed
                   <p>Source Code</p>
                 </motion.a>
               )}
-            </div>
+            </motion.div>
           </motion.div>
         )}
       </AnimatePresence>

@@ -6,6 +6,7 @@ import Head from 'next/head';
 import useTranslation from 'next-translate/useTranslation';
 import AllPagesLayout from '../layouts/allPagesLayout';
 import Image from 'next/image';
+import Certifications from './../components/Certifications';
 
 const about = (props) => {
   let { t } = useTranslation('about');
@@ -67,6 +68,18 @@ const about = (props) => {
               </ul>
             </div>
           </div>
+
+          {/* Certifications */}
+          {/* <div className="py-5 text-xl text-center dark:text-nord6 dark:text-shadow text-nord3 px-7 lg:px-10">
+            <h4 className="font-semibold capitalize">{t('about:certificates')}</h4>
+            <div>
+              <Certifications
+                title="front end libraries"
+                source="/images/certifications/front-end-libraries.png"
+                link="https://www.freecodecamp.org/certification/luis-pinheiro/front-end-libraries"
+              />
+            </div>
+          </div> */}
 
           <div id="social-links " className="w-full pb-5 mt-10 sm:max-w-md">
             <ul className="flex flex-wrap justify-around place-content-center">
